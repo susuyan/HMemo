@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		A16E88CD1DF14C35008A8B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E88CC1DF14C35008A8B67 /* main.m */; };
 		A16E88D01DF14C35008A8B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E88CF1DF14C35008A8B67 /* AppDelegate.m */; };
-		A16E88D31DF14C35008A8B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E88D21DF14C35008A8B67 /* ViewController.m */; };
 		A16E88D61DF14C35008A8B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16E88D41DF14C35008A8B67 /* Main.storyboard */; };
 		A16E88D81DF14C35008A8B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16E88D71DF14C35008A8B67 /* Assets.xcassets */; };
 		A16E88DB1DF14C35008A8B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16E88D91DF14C35008A8B67 /* LaunchScreen.storyboard */; };
+		A16E89071DF26D27008A8B67 /* HMemoFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89061DF26D27008A8B67 /* HMemoFlowLayout.m */; };
+		A16E890A1DF4EE7E008A8B67 /* HMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89091DF4EE7E008A8B67 /* HMemoViewController.m */; };
+		A16E89121DF4F3BC008A8B67 /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89111DF4F3BC008A8B67 /* UIColor+RGBValues.m */; };
+		A16E89161DF509B8008A8B67 /* HMemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89151DF509B8008A8B67 /* HMemoCollectionViewCell.m */; };
+		A16E89181DF50E0C008A8B67 /* HMemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,19 @@
 		A16E88CC1DF14C35008A8B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A16E88CE1DF14C35008A8B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A16E88CF1DF14C35008A8B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A16E88D11DF14C35008A8B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A16E88D21DF14C35008A8B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A16E88D51DF14C35008A8B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A16E88D71DF14C35008A8B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16E88DA1DF14C35008A8B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A16E88DC1DF14C35008A8B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16E89051DF26D27008A8B67 /* HMemoFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMemoFlowLayout.h; sourceTree = "<group>"; };
+		A16E89061DF26D27008A8B67 /* HMemoFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMemoFlowLayout.m; sourceTree = "<group>"; };
+		A16E89081DF4EE7E008A8B67 /* HMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMemoViewController.h; sourceTree = "<group>"; };
+		A16E89091DF4EE7E008A8B67 /* HMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMemoViewController.m; sourceTree = "<group>"; };
+		A16E89101DF4F3BC008A8B67 /* UIColor+RGBValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBValues.h"; sourceTree = "<group>"; };
+		A16E89111DF4F3BC008A8B67 /* UIColor+RGBValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBValues.m"; sourceTree = "<group>"; };
+		A16E89141DF509B8008A8B67 /* HMemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMemoCollectionViewCell.h; sourceTree = "<group>"; };
+		A16E89151DF509B8008A8B67 /* HMemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMemoCollectionViewCell.m; sourceTree = "<group>"; };
+		A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMemoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +69,13 @@
 		A16E88CA1DF14C35008A8B67 /* HMemo */ = {
 			isa = PBXGroup;
 			children = (
-				A16E88CE1DF14C35008A8B67 /* AppDelegate.h */,
-				A16E88CF1DF14C35008A8B67 /* AppDelegate.m */,
-				A16E88D11DF14C35008A8B67 /* ViewController.h */,
-				A16E88D21DF14C35008A8B67 /* ViewController.m */,
+				A16E890D1DF4EEC5008A8B67 /* App */,
+				A16E890F1DF4F33F008A8B67 /* Constants */,
+				A16E890E1DF4F31C008A8B67 /* Catagroies */,
+				A16E890B1DF4EE95008A8B67 /* Controller */,
+				A16E890C1DF4EEA4008A8B67 /* View */,
 				A16E88D41DF14C35008A8B67 /* Main.storyboard */,
 				A16E88D71DF14C35008A8B67 /* Assets.xcassets */,
-				A16E88D91DF14C35008A8B67 /* LaunchScreen.storyboard */,
-				A16E88DC1DF14C35008A8B67 /* Info.plist */,
 				A16E88CB1DF14C35008A8B67 /* Supporting Files */,
 			);
 			path = HMemo;
@@ -74,9 +84,57 @@
 		A16E88CB1DF14C35008A8B67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A16E88DC1DF14C35008A8B67 /* Info.plist */,
 				A16E88CC1DF14C35008A8B67 /* main.m */,
+				A16E88D91DF14C35008A8B67 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A16E890B1DF4EE95008A8B67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A16E89081DF4EE7E008A8B67 /* HMemoViewController.h */,
+				A16E89091DF4EE7E008A8B67 /* HMemoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A16E890C1DF4EEA4008A8B67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A16E89141DF509B8008A8B67 /* HMemoCollectionViewCell.h */,
+				A16E89151DF509B8008A8B67 /* HMemoCollectionViewCell.m */,
+				A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */,
+				A16E89051DF26D27008A8B67 /* HMemoFlowLayout.h */,
+				A16E89061DF26D27008A8B67 /* HMemoFlowLayout.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A16E890D1DF4EEC5008A8B67 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A16E88CE1DF14C35008A8B67 /* AppDelegate.h */,
+				A16E88CF1DF14C35008A8B67 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		A16E890E1DF4F31C008A8B67 /* Catagroies */ = {
+			isa = PBXGroup;
+			children = (
+				A16E89101DF4F3BC008A8B67 /* UIColor+RGBValues.h */,
+				A16E89111DF4F3BC008A8B67 /* UIColor+RGBValues.m */,
+			);
+			name = Catagroies;
+			sourceTree = "<group>";
+		};
+		A16E890F1DF4F33F008A8B67 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16E88DB1DF14C35008A8B67 /* LaunchScreen.storyboard in Resources */,
+				A16E89181DF50E0C008A8B67 /* HMemoCollectionViewCell.xib in Resources */,
 				A16E88D81DF14C35008A8B67 /* Assets.xcassets in Resources */,
 				A16E88D61DF14C35008A8B67 /* Main.storyboard in Resources */,
 			);
@@ -151,7 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A16E88D31DF14C35008A8B67 /* ViewController.m in Sources */,
+				A16E89121DF4F3BC008A8B67 /* UIColor+RGBValues.m in Sources */,
+				A16E89161DF509B8008A8B67 /* HMemoCollectionViewCell.m in Sources */,
+				A16E890A1DF4EE7E008A8B67 /* HMemoViewController.m in Sources */,
+				A16E89071DF26D27008A8B67 /* HMemoFlowLayout.m in Sources */,
 				A16E88D01DF14C35008A8B67 /* AppDelegate.m in Sources */,
 				A16E88CD1DF14C35008A8B67 /* main.m in Sources */,
 			);
@@ -310,6 +372,7 @@
 				A16E88E11DF14C35008A8B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
