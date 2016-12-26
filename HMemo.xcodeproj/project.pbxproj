@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A16E4C041DF9A2AB00F476C1 /* HMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E4C031DF9A2AB00F476C1 /* HMenuView.m */; };
 		A16E88CD1DF14C35008A8B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E88CC1DF14C35008A8B67 /* main.m */; };
 		A16E88D01DF14C35008A8B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E88CF1DF14C35008A8B67 /* AppDelegate.m */; };
 		A16E88D61DF14C35008A8B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16E88D41DF14C35008A8B67 /* Main.storyboard */; };
@@ -17,9 +18,18 @@
 		A16E89121DF4F3BC008A8B67 /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89111DF4F3BC008A8B67 /* UIColor+RGBValues.m */; };
 		A16E89161DF509B8008A8B67 /* HMemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E89151DF509B8008A8B67 /* HMemoCollectionViewCell.m */; };
 		A16E89181DF50E0C008A8B67 /* HMemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */; };
+		A174D8F31DF68A9500EE86FD /* HEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A174D8F21DF68A9500EE86FD /* HEditViewController.m */; };
+		A174D8F61DF68AAC00EE86FD /* HSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A174D8F51DF68AAC00EE86FD /* HSettingsViewController.m */; };
+		A174D8FC1DF7A66E00EE86FD /* UILabel+Caculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A174D8FB1DF7A66E00EE86FD /* UILabel+Caculate.m */; };
+		F7D2E625E9BAAF563193E326 /* libPods-HMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D66B2896076DA8F90987E0 /* libPods-HMemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32EA3112CE5074C961AA36C4 /* Pods-HMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMemo/Pods-HMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4CFBCA1AAFF398F6EE7F63AD /* Pods-HMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMemo/Pods-HMemo.release.xcconfig"; sourceTree = "<group>"; };
+		54D66B2896076DA8F90987E0 /* libPods-HMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16E4C021DF9A2AB00F476C1 /* HMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMenuView.h; sourceTree = "<group>"; };
+		A16E4C031DF9A2AB00F476C1 /* HMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMenuView.m; sourceTree = "<group>"; };
 		A16E88C81DF14C35008A8B67 /* HMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16E88CC1DF14C35008A8B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A16E88CE1DF14C35008A8B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +47,14 @@
 		A16E89141DF509B8008A8B67 /* HMemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMemoCollectionViewCell.h; sourceTree = "<group>"; };
 		A16E89151DF509B8008A8B67 /* HMemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMemoCollectionViewCell.m; sourceTree = "<group>"; };
 		A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		A174D8F11DF68A9500EE86FD /* HEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEditViewController.h; sourceTree = "<group>"; };
+		A174D8F21DF68A9500EE86FD /* HEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEditViewController.m; sourceTree = "<group>"; };
+		A174D8F41DF68AAC00EE86FD /* HSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSettingsViewController.h; sourceTree = "<group>"; };
+		A174D8F51DF68AAC00EE86FD /* HSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSettingsViewController.m; sourceTree = "<group>"; };
+		A174D8F81DF6A29500EE86FD /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A174D8F91DF6A29500EE86FD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A174D8FA1DF7A66E00EE86FD /* UILabel+Caculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Caculate.h"; sourceTree = "<group>"; };
+		A174D8FB1DF7A66E00EE86FD /* UILabel+Caculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Caculate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +62,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D2E625E9BAAF563193E326 /* libPods-HMemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49BF9E85510FEFB3CBE7054A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32EA3112CE5074C961AA36C4 /* Pods-HMemo.debug.xcconfig */,
+				4CFBCA1AAFF398F6EE7F63AD /* Pods-HMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		716202524604B1B1EDB1FF1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D66B2896076DA8F90987E0 /* libPods-HMemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A16E88BF1DF14C35008A8B67 = {
 			isa = PBXGroup;
 			children = (
 				A16E88CA1DF14C35008A8B67 /* HMemo */,
 				A16E88C91DF14C35008A8B67 /* Products */,
+				49BF9E85510FEFB3CBE7054A /* Pods */,
+				716202524604B1B1EDB1FF1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +112,7 @@
 				A16E890E1DF4F31C008A8B67 /* Catagroies */,
 				A16E890B1DF4EE95008A8B67 /* Controller */,
 				A16E890C1DF4EEA4008A8B67 /* View */,
+				A174D8F71DF6A28800EE86FD /* Source */,
 				A16E88D41DF14C35008A8B67 /* Main.storyboard */,
 				A16E88D71DF14C35008A8B67 /* Assets.xcassets */,
 				A16E88CB1DF14C35008A8B67 /* Supporting Files */,
@@ -96,6 +135,10 @@
 			children = (
 				A16E89081DF4EE7E008A8B67 /* HMemoViewController.h */,
 				A16E89091DF4EE7E008A8B67 /* HMemoViewController.m */,
+				A174D8F11DF68A9500EE86FD /* HEditViewController.h */,
+				A174D8F21DF68A9500EE86FD /* HEditViewController.m */,
+				A174D8F41DF68AAC00EE86FD /* HSettingsViewController.h */,
+				A174D8F51DF68AAC00EE86FD /* HSettingsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -108,6 +151,8 @@
 				A16E89171DF50E0C008A8B67 /* HMemoCollectionViewCell.xib */,
 				A16E89051DF26D27008A8B67 /* HMemoFlowLayout.h */,
 				A16E89061DF26D27008A8B67 /* HMemoFlowLayout.m */,
+				A16E4C021DF9A2AB00F476C1 /* HMenuView.h */,
+				A16E4C031DF9A2AB00F476C1 /* HMenuView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -126,6 +171,8 @@
 			children = (
 				A16E89101DF4F3BC008A8B67 /* UIColor+RGBValues.h */,
 				A16E89111DF4F3BC008A8B67 /* UIColor+RGBValues.m */,
+				A174D8FA1DF7A66E00EE86FD /* UILabel+Caculate.h */,
+				A174D8FB1DF7A66E00EE86FD /* UILabel+Caculate.m */,
 			);
 			name = Catagroies;
 			sourceTree = "<group>";
@@ -137,6 +184,15 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		A174D8F71DF6A28800EE86FD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A174D8F81DF6A29500EE86FD /* Roboto-Bold.ttf */,
+				A174D8F91DF6A29500EE86FD /* Roboto-Thin.ttf */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A16E88DF1DF14C35008A8B67 /* Build configuration list for PBXNativeTarget "HMemo" */;
 			buildPhases = (
+				55DE7BF7324EF6C5E5322754 /* [CP] Check Pods Manifest.lock */,
 				A16E88C41DF14C35008A8B67 /* Sources */,
 				A16E88C51DF14C35008A8B67 /* Frameworks */,
 				A16E88C61DF14C35008A8B67 /* Resources */,
+				5EE5C42645389D57BCDDF144 /* [CP] Embed Pods Frameworks */,
+				8CD6A797295BC07E7ADFADF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,7 +222,7 @@
 		A16E88C01DF14C35008A8B67 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = susuyan;
 				TargetAttributes = {
 					A16E88C71DF14C35008A8B67 = {
@@ -205,6 +264,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55DE7BF7324EF6C5E5322754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE5C42645389D57BCDDF144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMemo/Pods-HMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD6A797295BC07E7ADFADF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMemo/Pods-HMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A16E88C41DF14C35008A8B67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,9 +319,13 @@
 			files = (
 				A16E89121DF4F3BC008A8B67 /* UIColor+RGBValues.m in Sources */,
 				A16E89161DF509B8008A8B67 /* HMemoCollectionViewCell.m in Sources */,
+				A174D8F31DF68A9500EE86FD /* HEditViewController.m in Sources */,
 				A16E890A1DF4EE7E008A8B67 /* HMemoViewController.m in Sources */,
+				A174D8F61DF68AAC00EE86FD /* HSettingsViewController.m in Sources */,
 				A16E89071DF26D27008A8B67 /* HMemoFlowLayout.m in Sources */,
+				A174D8FC1DF7A66E00EE86FD /* UILabel+Caculate.m in Sources */,
 				A16E88D01DF14C35008A8B67 /* AppDelegate.m in Sources */,
+				A16E4C041DF9A2AB00F476C1 /* HMenuView.m in Sources */,
 				A16E88CD1DF14C35008A8B67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +370,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -306,6 +418,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -331,6 +444,7 @@
 		};
 		A16E88E01DF14C35008A8B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32EA3112CE5074C961AA36C4 /* Pods-HMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JNM5BY9B8S;
@@ -343,6 +457,7 @@
 		};
 		A16E88E11DF14C35008A8B67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFBCA1AAFF398F6EE7F63AD /* Pods-HMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JNM5BY9B8S;

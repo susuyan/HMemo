@@ -1,0 +1,1980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0111B838A6E3984290652B4CD87986B6 /* NSData+EvernoteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C246E6B19C6EEAC662E328602216795 /* NSData+EvernoteSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04FE1FD40B1F666C1D0DC54D09C37FF0 /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E7820F202AFCD279617FEBBF152CB9 /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0533684CAF37978623FF660747BA9E1E /* ENUserStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C374C4C04FFB34FE01F346746BC0AEB0 /* ENUserStoreClient.m */; };
+		0674903C19807D6DBA15BE6B3CE1FD4F /* ENTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C51B3C7C68D98FED83B46DF48BB186C8 /* ENTheme.m */; };
+		06B6CB52783BB9F605F3F907DB3D3D6E /* ENNoteStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9137209A7F44AF28DA94A94FCBC14A67 /* ENNoteStoreClient.m */; };
+		076FA857A78559B34141A0EC5A380191 /* ENLinkedNoteStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B11D988BBC83287681C5D271121CBF53 /* ENLinkedNoteStoreClient.m */; };
+		07F1902CEAB1084D0D6FC9379287541A /* ENTException.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC01C3A33FB4DD8B434D184B51CAFDC /* ENTException.m */; };
+		087064A0EDBE31D9B3C0246B1FAFAEC3 /* ENNote.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6A20A3C39F53B3099D73D4A01FF747 /* ENNote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0872799F8F97DECC46DE3FFFBC1DFC2D /* RMSTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7418E185360A0C870713EC84AD5EC89 /* RMSTokenView.m */; };
+		0C4B4AB798423876615F37ACD2FE337F /* KSWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA6795F8BF2F841884E10AA5C19DB6E /* KSWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF492F8CAA55B2E541707D17720E83B /* evernote-cloud-sdk-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4AB9374B1046A5905B13584E7B210E /* evernote-cloud-sdk-ios-dummy.m */; };
+		0EA55580679A8DEB1231F61C2244F040 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A7262E4351B9C4CF61BC32D9EAFBDB /* CoreGraphics.framework */; };
+		0F36F89DF6382C2C44F696FBB1DF59CE /* NSString+EDAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 357D131DF89A0D9C6E47A3249BD84E8A /* NSString+EDAMAdditions.m */; };
+		0F6647C1773BC63ADDBE0636744B635E /* ENSDKResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB0DB33FB09F288A0BF11BDF874BF6E /* ENSDKResourceLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1119FC8558C636D723A84CBCF09B225F /* ENCommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F09D8F097DA66B82AA1CC0405B36D1 /* ENCommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1250C4E04CD5D3FBCC1F855F41864931 /* ENTBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B2851E9630D5B24B448628CA68ADED83 /* ENTBinaryProtocol.m */; };
+		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C44D797F3C8F9B99697E15C2DE81D2 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135B0E651C81F4DBA908609FC9DFA6CF /* ENCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B77C91306EBCF3D76FA8C6CAAE0C983 /* ENCommonUtils.m */; };
+		138AB0D0448CDDA54841D5C807092AE3 /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4117ACBFFA7C68BFD733B615C8B24AED /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15EE9A4B91EB48A260D349F66EEA3357 /* KSXMLAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF7335C121400E5397021D153D905FD /* KSXMLAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		182F06A6713B26E30E02EAC6D959C6FD /* ENMLUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEC51A2957D0286BA7E155C44A3A0F /* ENMLUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18C5B28AABF523D2AA92FE55C73594F6 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF003493D66A869943D1FE765258D91 /* NSDate+TimeAgo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		19229EA3F1D00F9AF657BF6F44EDCD82 /* EDAMNoteStoreClient+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A102E28E36A4600EC6FC27EDE3AA10A /* EDAMNoteStoreClient+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19566E45E20FB1A8266FD306174F9B0C /* ENShareURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAC4372C236947482E809702A2FA2C /* ENShareURLHelper.m */; };
+		19C33FF5EFFF79A2AC2C42AE6E0FBE06 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A94872C5F27BD14C025D20272721B17F /* ENCredentialStore.m */; };
+		1B3C14933837EC177DD434C754621279 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CB130579ED334D1BD7DC4F8190DE47 /* NSString+URLEncoding.m */; };
+		201312914DBFB9411468236BAD5788BD /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A13A89920D48F6F2F4EB959792B42A81 /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2097CEE6DB2B44A13D9F1200ED99E0FF /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B80169DF290D885320FE37F0095C9 /* YYTextUtilities.m */; };
+		214F120FB507BF07B860FFF410657E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */; };
+		2176449D15E7B55229E435D8AC839837 /* YYTextMagnifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 6222DB65A544422608628BCE86EAAF1A /* YYTextMagnifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2303AADB60D6749D0E127946D68DB219 /* ENMIMEUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B967BCDD6E11D24FB7616F8EFDDC658 /* ENMIMEUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23C1184DD00ECEC38059711C12ACF7D3 /* NSString+ENScrubbing.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA38AE61ACD4D40F3AFF373C0BDD45C /* NSString+ENScrubbing.m */; };
+		23DC2DA47B7AFBEB7E6542F468A4F2F2 /* YYTextTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D4172433A391CAE20B5D998C2128F6C8 /* YYTextTransaction.m */; };
+		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17A3D6AD9927C11435E0F4334321DA /* UIActivityIndicatorView+AFNetworking.m */; };
+		25D9D31672D9E7FC93B4C63D991C3F56 /* ENTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF360713A76B810AE6F8A5F97EE3C03 /* ENTProtocol.m */; };
+		2762A91DCA60D8DF9031851F7080A6A1 /* ENOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B6B53BCA5073A58D65448B0092DD77 /* ENOAuthViewController.m */; };
+		27964EE9F1A811F981F66E2443C921D8 /* ENCredentialStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5956551596F998A5048242D1AF27CA56 /* ENCredentialStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FC0A4860F8A1F36746A96C6472EE72 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CDFDA8E6514D1E8B91983FC8684AC /* YYTextKeyboardManager.m */; };
+		2843898C40D365BC1361BF1CD832E9B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A7262E4351B9C4CF61BC32D9EAFBDB /* CoreGraphics.framework */; };
+		286CEF5568FBFDD86809F3E55EB3ED1E /* ENNotebookPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6D171F8A6C8A1FADDE04ED4CE276E /* ENNotebookPickerView.m */; };
+		29119F93E4B9B1CF09193560602AC9AB /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826C7AE91540A342B0A78493508DBAA /* UIPasteboard+YYText.m */; };
+		296F4CEC21CD3776AD5CACB184D07756 /* ENMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2F5A814BBFC7F2EC1D0868E82DBF0E /* ENMLWriter.m */; };
+		2B3786C0C4F52969D87994CC5E620DF5 /* ENNotebookChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7879B3E6B34F102C26D49A1412E88 /* ENNotebookChooserViewController.m */; };
+		2E498E6414B4A24907838973CA972203 /* YYTextArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FF9C743BC98B327A1E1406CB57C25C /* YYTextArchiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E834AF19D06126373B5DAFC603A06D4 /* YYTextAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C244AAC714972C6AB70376392E242E /* YYTextAsyncLayer.m */; };
+		2EAE035FAAD5044704915582DDA47D86 /* ENUserStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1E16473885988270B00A418109435A /* ENUserStoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F0543193C1AB1C8F82BA4BDA1CBAD88F /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EF10A1E3F377B99100E42BE72391D04 /* KSForwardingWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EF10BC3AD6D42BF771A907FEA838B5B5 /* KSForwardingWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F3B9C15FF99F8C2467BFA2E424314AF /* ENXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F02500D7F3A7E9163695DC739AC995D /* ENXMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FB795EEB9DC6CE024BE3175A114DAB0 /* ENMLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BCFBF896B0255FB2F9DD547E302BA0A8 /* ENMLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31405B1B1BDB7F11E47E8826428C3270 /* ENLinkedNotebookRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D5F052BA65DD7CD23914D0336AA18 /* ENLinkedNotebookRef.m */; };
+		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A96A4D791A133484E722855D6BA67B /* AFNetworkActivityIndicatorManager.m */; };
+		3225233E23F16DD8289F477E10F45F71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C068B9E49CA40D551EABC8A4DDA31DC4 /* UIKit.framework */; };
+		3298059BCF0CD9F1C2E2D47F9EFF7B4E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E047EA0B194C7C82C12FED89F77A3EE6 /* Accelerate.framework */; };
+		32A73BDEC78B7DB85FD65E4B7024BF62 /* ENSDKPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EF2DD5970018E55E33682E9D7CBDDA /* ENSDKPrivate.m */; };
+		357335BEF3694A08756F7D18A1E8F9FD /* ENNoteRef.h in Headers */ = {isa = PBXBuildFile; fileRef = C817D00E20189B9DC83C1C9EE83FA298 /* ENNoteRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359BFC6C86A0065B9A35F442E0ADA7D7 /* FATField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9CFB9F0BBCAC488D1CCCA2559965D8 /* FATField.m */; };
+		364DA39F79A88955F42D79E4D39AE35B /* ENPreferencesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2555644CF5B630DA50540D72CFCBA9 /* ENPreferencesStore.m */; };
+		36E08A785C5FDA0E0F1CFAA26336C5CD /* ENNoteSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F717962E7B3DEC6F12302D6F92A110 /* ENNoteSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39172E2FCBB55EDB1443E24B827FA915 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4136B1FA2D79502ABE90BF349438BF /* RMSTokenView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39577B3E975FB58A75E78E60FC2AD8D3 /* ENNoteContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E405DF3B8DF237BC06E25BE55082BF2 /* ENNoteContent.m */; };
+		3AEA7B6B6BCA3C13DEFFE03B06728420 /* NSString+EDAMNilAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F06D6519AA441F556CB686382B701B1 /* NSString+EDAMNilAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C915CE605CED83E63AE59925CD64343 /* ENNotebookPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB06955452538DAD2BCAEC42152E4CDB /* ENNotebookPickerButton.m */; };
+		3DB81AE59447472A4123B5A9DA7EDC50 /* EDAMLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = B623B5FC6DC6751E5D0D8BA7333CC0E4 /* EDAMLimits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40B8C2C7DB38CFD17F8B8457DF4CC9D1 /* KSWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB16F495DE7F8BE075266A04B53C1B /* KSWriter.m */; };
+		40E956C17B4FCD4AFC86B538BC4292DA /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A947BEBBC6CA4AE4F2C23AE49C664521 /* YYLabel.m */; };
+		410060CF5079FFA8C4D55C3E0D3BA9FF /* ENHTMLNoteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A5C84335B26025450997415F5A05A4 /* ENHTMLNoteContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4212D51BE08E9E54A23E4EE2893253B9 /* ENMLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 290BE6FEAA14DD3F6773F2E54E804DCB /* ENMLConstants.m */; };
+		42E626D71372BB9A5284BAED8584E509 /* ENHTMLtoENMLConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4751FFD63C33AD854E3605A9AA1BA988 /* ENHTMLtoENMLConverter.m */; };
+		45870C129975CE5DD78C2E2C04B2E198 /* UIPasteboard+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 719DCC9FB8D417B2902432E5A04C72BB /* UIPasteboard+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC134A1B1C7CA57981FF38C758E9BEE /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46AC755DBA602C91C2442ED0C9FDF2D4 /* ENXMLUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1AB558C56ED8328EF042E7F725025B /* ENXMLUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D60E0D8DDDFD7C6B114CE318A84CC8 /* ENLinkedNotebookRef.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D81EAB62ADA150D49E27FD413EC55A /* ENLinkedNotebookRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A43227E0D30CFC2CB4597967DD7E3A0 /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBA8C51B5E1897757BC3FB34FDEAFD /* ENCredentials.m */; };
+		4BC5AC0711D0DA487FA999F3EA6C8F9F /* ENResource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC3D29BE73368B6ECE7917AF077FEC7 /* ENResource.m */; };
+		4C9130DC8678D42BF3266AD3AAD6953B /* NSString+XMLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBD42AB60AA5CD5BF6E62CEC2FAC691 /* NSString+XMLAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF31EA8AE01F33F41070F8BDC394D71 /* RMSTokenConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E51B1787CEB725C51BF8BA4AE79C75D6 /* RMSTokenConstraintManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB58F1F4EE53C0B0D1883B339AF97EE /* ENTHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B75B9FB63A4530DC1BFFDBC9D5321F94 /* ENTHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ED24FE3193768A299F1A05E7A2F72CB /* ENXMLDTD.h in Headers */ = {isa = PBXBuildFile; fileRef = 98CBE7FA3144F13A1DB32F7BB969A0E1 /* ENXMLDTD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ED94DDA78BDDFD5D195BE3165447F8C /* ENTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96834F8D96EFB2FAA711C1F314C50E /* ENTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F2462309810550C7BC8A9470E47BAA2 /* NSDate+TimeAgo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E39D5DCF9FA638B8665C5D75AE1275 /* NSDate+TimeAgo-dummy.m */; };
+		508E1D44D5BDBC6FFF134EB3EF8ED677 /* EDAMNoteStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 384E6EA24AC4A466A3B357CC26538566 /* EDAMNoteStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DF643DCD13083BC8D7BFC8EC8EB9A3 /* ENSSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FB5D6FF6F01CD360B546B43F68193E /* ENSSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52EB15585D89CD46550C8BB0656E80B6 /* ENSaveToEvernoteActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1C319B9D4EEF319CACD653B535AB1 /* ENSaveToEvernoteActivity.m */; };
+		5412788EBF1F7E569B73797B7F5294C3 /* ENBusinessNoteStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C49016CCCA0ADEE0C6810D01FAE88018 /* ENBusinessNoteStoreClient.m */; };
+		54B14027FC75DA94E5439F7C0D731488 /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = E9479642E2D1A028561626B7D604151C /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5512E38161CE31EA54D9C720565083DA /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250FB71D897C6F79C707C1348ED151D /* EDAMTypes.m */; };
+		552DA2143CAD00F3E3763D7DC23EDB83 /* ENSDKLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5AEED06E07C63D7054E44AE36FEF7 /* ENSDKLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		553D83697EEA35FB479150E98DC467DA /* ENWebArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 22A9507A9355D118DD6D23446BF32864 /* ENWebArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5542362C650E4DC8E5A1D71CD89B7D04 /* ENNotebookTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 733CF3D404CD586DF24CC051BE5738A6 /* ENNotebookTypeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E259FD1F1A62B8FF58D6E5EDCC20C815 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		572678534F3E3E87B63571E7254A7F58 /* ENSaveToEvernoteActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 34157524C2EAEE69AC4F8C208F689033 /* ENSaveToEvernoteActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 625ED6456F53EEB8F27BBBFC97A70384 /* AFURLRequestSerialization.m */; };
+		59E68AA05D2EA09AB0D2E0B686564BA6 /* ENWebArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 11366EA8003D555991A0DEA6E577ECD2 /* ENWebArchive.m */; };
+		5A8C09A22ADCF8868C263AE0DD0BB5AD /* ENStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7A5F0FB1BE11658EF838AA1822B343 /* ENStoreClient.m */; };
+		5B8C7050BA1E8A7DE57BEE886FE7E302 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839B8C3D2ABAF90EF467522C1910E54 /* YYTextInput.m */; };
+		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28404504C5D58C217468AD67AA32218A /* AFImageDownloader.m */; };
+		5D3AB69423A9C940C7CC562634C82310 /* KSXMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C42635A4C870751B7468355E3149F1F /* KSXMLAttributes.m */; };
+		5D47C76D2006B9D2913F54D90C429F77 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9077F9A7127650B211F36D0DE44DDA /* YYTextView.m */; };
+		5EF0305521319D9A7C3DF07B5ADC221C /* ENNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E43FE3BAC55E9116EAE5C128F0F2AFB8 /* ENNotebook.m */; };
+		6238784E8C8A2B1B2A8E812E9D63320C /* ENXMLSaxParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 746A7434C1B44855F307C23999C37D4C /* ENXMLSaxParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6462F79C6845B62EFDFF580E77BE4682 /* ENEncryptedContentInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F80E8C16C1A6F08164A5780985FBEE /* ENEncryptedContentInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A93BF4DDDC5E905A43AF4BA6453203 /* ENSSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A54B8E4DA712DFBE6E0AC81FB3ADBF9B /* ENSSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65279D89B32840FDB8C77E15223916FC /* KSXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BB9E05882D6C3078F807F0E741D73 /* KSXMLWriter.m */; };
+		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C7E9752FD27E90A8A3C93450C372AEE /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		668947C69B7885184EDD8B11B4112D68 /* ENStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBED948DCB016CB4099CAE2D081ED59 /* ENStoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEABA7E05300E330D5866DA695CFBB6 /* AFSecurityPolicy.m */; };
+		6704F3240CE2FF3FA38419ABF45DF5CB /* ENWebResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B865D9295B927DEDCC7A9457B75A6A /* ENWebResource.m */; };
+		673932BEAB46DD581E3D535B0BBF4B0D /* ENSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFE83C72C6A64609821EE62AA2D8AB /* ENSession.m */; };
+		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2439B06113B6E98F64E5DA62B0BA32B7 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68A0B2C65AE1F05AEFFF150DFEA1F313 /* ENXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42C36F9EA879DEF231FEBDECA2AA2A /* ENXMLWriter.m */; };
+		6900657E4B814468B9CCC7E06F8B4004 /* KSHTMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C090C3646C3382AF64B8137093B0AF /* KSHTMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6926C296F132F0D165D24C759734F890 /* YYTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A22D1EE69644789689B81294D3FDD51C /* YYTextUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A5A56320CC6223DE6E92D35E79BB984 /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1677E9D2E0F9A3ED47FA6B5FBAE83F /* YYTextWeakProxy.m */; };
+		6AFFA1B9DA42A0BC35A3BA420294FF41 /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D628E7A1E3A284EA3E03752C067B4D38 /* YYTextRunDelegate.m */; };
+		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A9849692BE7CF3BFC329B3888FA01D /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C353FBF407329E923B07D092520262D /* ENMLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B273B848FA2EEA1497727AC64986C617 /* ENMLUtility.m */; };
+		6CA71E3A9199F4FA3CC9EF25855CAA81 /* ENError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710DF6CFB97A229128BD11271BBBF72 /* ENError.m */; };
+		6D474CD2EABDB7B2913B13AB96DF0A6C /* YYTextDebugOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A71EBAF2F20AC5D2A6A40FF36F2CB59 /* YYTextDebugOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF66B4A9E7E9B482363324EC9A18EFD /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 811992370AB6FC0B3E25B1EEC0092BD6 /* ENNotebookPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F5DE4C7F81560C9DB74B736DD8D9E91 /* ENAuthCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F817CF8D1065129FCAAFE9377C98B847 /* ENAuthCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = FD09876713D30D1EC5F6B86218E3E353 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7109D167D8DD94E53CCA42CFADFBB0AD /* EDAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC91A9CBF65B70A38477E034CFE2363 /* EDAM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71CC8A6A3FDBCAC66B9B466C8610FFA2 /* YYText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3D59BED14560ECD409F23F7C57395 /* YYText-dummy.m */; };
+		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C779039F35EE3A026D75A515D0C16B0 /* AFHTTPSessionManager.m */; };
+		74BD0CFA13BF71CBD064AB6CD7FE1D37 /* ENSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F27154756FBE71A0897B758A13363BF3 /* ENSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A212CA681F49B992378D99FE549F9A /* ENTHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5984C5018D739E91E3DE91B4B0AEC205 /* ENTHTTPClient.m */; };
+		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B735863B303D4EEE643941CD7CF87E1A /* AFAutoPurgingImageCache.m */; };
+		77E323E368DDA20BE3536A9DFA04C6BA /* ENWebResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F0739DE897E4691CAD81A679D0F124 /* ENWebResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79656E61FCE3EBAFA850E1EA14B674CF /* ENError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C89594ABB6BB96EDB32A1213DC6F15D /* ENError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B783E684202A94A4227BAF99215A9E5 /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7BB48B30E51733E1BFA482C690186 /* EDAMNoteStore.m */; };
+		7C30E0C085021C00AFA8C6AE19F1DCC1 /* ENWebContentTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFD354C04B33CF232285A0278F9FAE7 /* ENWebContentTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CBED81965BFFCB2EE242A9A294BB2BA /* ENLoadingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B490C297F81ADB60218D75452FC3D5 /* ENLoadingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0262AB8F9D229105F8F2B2BFC23CF0 /* YYTextAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F16397485345F85B093E2958600D5DA /* YYTextAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F0FD593048CE037E010320FB5E24401 /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B63F6B603DC32EED93864D7E4FA8B1A2 /* YYTextAttribute.m */; };
+		8322A0B3F141329B80CA99701973011C /* ENAuthCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FC378BCB88175F35A234A45634FA8 /* ENAuthCache.m */; };
+		8392BA798779269A8BF4CD3D6106366F /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = E296DC253D6F44F3E9C8EB9909CA3891 /* YYTextLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842727DF0A00092CF0DC4166E99913CD /* YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A43882AAABC5957DAA5E21804BF2F5 /* YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85229BE2A9464660429DC05EC21524FE /* ENResource.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F63CC3E21DBD20C85ABE0C62DB20B3 /* ENResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCFC84FB988D95E2B09DC37FD1F407 /* AFURLResponseSerialization.m */; };
+		86306722CCCF6164B16535AB3B187B65 /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9650851B05930E09DF798892A21F69D6 /* ENNotebookPickerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874E915FFEDE5E015053D3103DC2E943 /* UIView+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B8A6994534A2E2A5C5E6FEDEAE8D51 /* UIView+YYText.m */; };
+		875E34EE1549DA25CCFDED0BC72EF689 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23E1032A135515261A5C08912CDAC4 /* YYTextDebugOption.m */; };
+		87D8D6F24292307EEDE49572099604FD /* ENMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42903E326ED166227DAAC941A43B48FC /* ENMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F47857694DA022B4EA59EB99E82097 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8989B711A5D87356123CF0EB36769D3B /* ENSSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1C5C2FDE0F43E35F4AC8623CC41EC1 /* ENSSKeychainQuery.m */; };
+		89BD868CAE4122A6D1C95379A95592EF /* ENSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D6AF6DD9C09EC4A813B3C0101005C125 /* ENSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CC383DB2A0588AE3708FC01DB4D9BA /* ENLinkedNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB05998FD45E48402D9C68DD2F1A52E /* ENLinkedNoteStoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E7F2E238BE81231F0EEA81459AD397 /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC30EE3E6BF9A806201E4B646838FB8 /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6238432CCB62CFAE00558D2CEBD0A5 /* ENTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 7349165DB7F46A987CD8BB7BF0B07CB3 /* ENTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC61DCE7ACEA0A61300C6F782D361D5 /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE920C7CBF022353852035797F65F4 /* EDAMErrors.m */; };
+		8B1E1A45E0B423395CE2A513BB1B1010 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E876B23FD46F9C76DBEE4D344E5F1B /* MobileCoreServices.framework */; };
+		8B301F2D61E00C80217CF55D5724C5D4 /* ENAFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD1B51622D92B81ECAF8DFDE9CE131E /* ENAFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C9AEAAF500CDEA6E6030FA8B78309D2 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4862DF991BB81E5F9095294CD495A8 /* RMSTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E11745907ACEC06FBD0E29E39175430 /* ENNotebookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B17B70DB4B72E4608E6AF7CE1FA51C /* ENNotebookCell.m */; };
+		8EA8F03723B9B26EADEDD92A3FA6AB91 /* ENGCOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = AA46D273EF702347811C7479F7FA5349 /* ENGCOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECDDB4EC19E5087B9C3825EF2274DB2 /* FATObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8377D751AD4E69DB349A69DCE933E6 /* FATObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F236E055C38B55802C72CF7AC9B845D /* ENBusinessNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EFA2B032DCDAE0070C608811C31523 /* ENBusinessNoteStoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F50B32A319A1B8A5CFC3399BE9E18F0 /* ENNotebookCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C38708F467E3E426CEC1872052C39F3 /* ENNotebookCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90BAA919224B59A619D47148A106D228 /* KSHTMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA5ADAA83586F831910DF31060BE47A /* KSHTMLWriter.m */; };
+		90F5C675B29555F4D7290F139B39FDD0 /* EDAMNoteStoreClient+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E5BAD6DC05BCDE74804A8346DC4E00 /* EDAMNoteStoreClient+Utilities.m */; };
+		91B66AA3194E6011C66AC274FBACB7E0 /* KSForwardingWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFA7EACFD38F3533560091C911B464 /* KSForwardingWriter.m */; };
+		91E6DDB2FFE5227EF1D72C568237464E /* RMSTokenConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 173199DD1E8BD9B11AD70F733D3BF323 /* RMSTokenConstraintManager.m */; };
+		9233661B657BF5CD8B1BA667F78F7D68 /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 524B859013026215493F51B358E4E95D /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C4C37F33133CE7C54D4A0E0724DCF4 /* YYTextTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9A84DC643EB09F41B5A3052BB33E8E /* YYTextTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93DC776A4CD22AD4D6F91DC9A7DF3D12 /* ENPlainNoteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 036E5A07D4BC62F072B345BBD8F2D12B /* ENPlainNoteContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		968388BDB3C30C7D3157C07FDDEBE09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */; };
+		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE311334268325E838CC4F3D4550B457 /* AFNetworking-dummy.m */; };
+		980F6F2AD8F3816FF3966B5DDAEC0460 /* FATObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A921036A64EEF8FA3B77AFDB0817B8 /* FATObject.m */; };
+		993CC5F5266CBFBF8E426BBDFA9D98EC /* ENShareURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B237559FEE228CBC6AAE28B398FA3ECB /* ENShareURLHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99DC876F3B10364E985C60F3F0032776 /* ENSSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6092188CF47AEA414115E4FEA551185E /* ENSSKeychain.m */; };
+		9A9159DF396841A71856E5B6AD1AE5AC /* EDAMUserStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B75F713BBC870BAB18F4D953E9D692C /* EDAMUserStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B5EB6CA4673377C7C9C6CA3C2E1CAFC /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8F8DCD06CEA49CEECED8496BB7CAA0 /* ENOAuthViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BF840EC134B3DA2C144917007D96375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C068B9E49CA40D551EABC8A4DDA31DC4 /* UIKit.framework */; };
+		9F183E670EDA5D7FEF0EA8351E153A04 /* FATField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E87A87271C49A7D94C13FC7E98D85A4 /* FATField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC25FD8EEB3CA0461A4C566B2CBAA62B /* AFURLSessionManager.m */; };
+		A0B69472964BA31B069D158FC9710122 /* NSString+ENScrubbing.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F5DE1F80E6EF934D21F7B9277D9620 /* NSString+ENScrubbing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 46442E6FAE3E2DEC871F1203597C2CBB /* UIImageView+AFNetworking.m */; };
+		A29BCA6942DAD190B8CB951E60FB73EB /* ENAFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 494DFB08DE0276054F751BF60DBC878A /* ENAFURLConnectionOperation.m */; };
+		A2C907572B7621D3BFC621D841B77C17 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7E48D6EC2AF80984D7948BE94C4411 /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A7865F196E8F59EFDF55B7D97992FD /* YYTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C3D5D1F27E3E86CECAEE736B6D92CE /* YYTextParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5ED125CBC74A97F8429120DA3B3942 /* UIWebView+AFNetworking.m */; };
+		AA65894C8971C6AE492ACFAD741BA7F1 /* ENEncryptedContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4480D446DAADCD2F1203D05AC93198EA /* ENEncryptedContentInfo.m */; };
+		AC33A79C92572AB189F634C5DA5D11F0 /* NSData+EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 515F6EC737B036CB41AD253D295424BD /* NSData+EvernoteSDK.m */; };
+		AD1C9DC56FA3D828786603109A74B625 /* ENNote.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA23AADEFE3C072504FF14600FF6E3 /* ENNote.m */; };
+		AFD0634B4D580C7C585C242BE0008A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */; };
+		B17881484B969F36DE933C0B862CBC83 /* ENSaveToEvernoteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE4BC3C0BC962763B87AD313BBA359E /* ENSaveToEvernoteViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B18B2039450F4F46A7ED8C5C1F2C7762 /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD271F96AAFE371333543A8DDE6FD2 /* YYTextSelectionView.m */; };
+		B1B892E2237C22A32B14A5D1FAA624B1 /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A45B50B280B6220262B6ED6A620F20 /* YYTextLayout.m */; };
+		B1E3BB0F9B97F894E7883DEF5B1198AF /* ENPreferencesStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC61882A82380BE64FC93BDCA4D310B /* ENPreferencesStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27F5A6B90ABA9F7E3B38284BE33D669 /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA683E980689BE8D2A72AC04A63B798 /* EDAMUserStore.m */; };
+		B3778EA721D4FE680DE93032D48B276B /* ENTBinaryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1976751CF7CA9BBB80310C361848F315 /* ENTBinaryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3E66E4938FF5EB992A28113E3E6856C /* NSRegularExpression+ENAGRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 887221903CA8942E3CDFA51FFE9C1BEB /* NSRegularExpression+ENAGRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA5933B728B3ABBE2F29227635E7F16 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B43F8B699C6B204EEDE26F506659F9BE /* ENOAuthAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9F3F18AD35CF7184496FCF7BAD3185 /* ENOAuthAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B45001EDFF5FBDECC42D4323E821F2FC /* ENWebClipNoteBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7863F89B34B932DFD517A11CFCBE26 /* ENWebClipNoteBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B59C5E982474495BC7EB651D37E67B93 /* ENSDKResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFC66137440E1652EBBB70B4489017 /* ENSDKResourceLoader.m */; };
+		B5C7750821697ECBCA258A7BA54FE110 /* ENWebClipNoteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4A322CE09BC9148CE5557A0B301634 /* ENWebClipNoteBuilder.m */; };
+		B6F9D230F731D08A2CB4C16E49161A48 /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE797DE8161044D889F908F9703CFC /* YYTextArchiver.m */; };
+		B7A9D38622C4A19A342C9613F21A025D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E876B23FD46F9C76DBEE4D344E5F1B /* MobileCoreServices.framework */; };
+		B7B3B9750D817EFCD58FE809E7FE02EE /* ENXMLSaxParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F086E584F7433EBFC28626628D3581E /* ENXMLSaxParser.m */; };
+		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 152EEBFBC84E20E947EF8CCBE6CB1C3A /* UIRefreshControl+AFNetworking.m */; };
+		B91E943E69272EB1F86AC980CC7D28C8 /* ENNoteRef.m in Sources */ = {isa = PBXBuildFile; fileRef = B938925A2024D3016918438D844BF2B2 /* ENNoteRef.m */; };
+		BA1CAC5C2D3F0737C99D4A902BBF39C9 /* ENNoteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2844F20319C5D1BF6899E4B9DD74819E /* ENNoteContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BABB29221565CA1F3FBFE485145A7F42 /* YYTextAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A62FA9721DD302C5849588B2FC86811E /* YYTextAsyncLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD1FCC4B71BD80A414490BE42AF033D /* ENGCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 63405A06EB6307D922BE789044274AC7 /* ENGCOAuth.m */; };
+		BCFA40FB1F1AD4260C016E63F0C7D858 /* ENXMLDTD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD986940510B9B93814C856AAC013934 /* ENXMLDTD.m */; };
+		BF99AECFB06049D1AF9A490769B4DB22 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE8664BD7BA4AE9AD2F17F16919E531 /* YYTextParser.m */; };
+		C0945BF4F5D0BD4F67A0E457EBE62855 /* ENOAuthAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5666B72A750B2854554FBBC32F6836 /* ENOAuthAuthenticator.m */; };
+		C0C9A40C3016B0A2F18430525D355B3D /* ENSDKAdvanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 0740ED5109E6DAC8A000BFC1D18717DA /* ENSDKAdvanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1336A5063AFC3CA46255ACD2FEAEE59 /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 261340740ECD08DF690972CE15E06E75 /* YYTextLine.m */; };
+		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB46A03C8CAF62766B3ED0761D49A24 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32DD380339BE22F83A5D5B663856F14 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972D44B1D07E89EF229F4B0CA594D315 /* CoreText.framework */; };
+		C3E10EF602B33E2E7247076E25B75AE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */; };
+		C405900BDFAD773934B9194D2D920D10 /* NSRegularExpression+ENAGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2225D05DBDDED63B82F4F66C67E4BA64 /* NSRegularExpression+ENAGRegex.m */; };
+		C411ECF88F1CA6D85AD5143244B4200D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */; };
+		C6BD2D885E241DB24268B6210FFE7946 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71B400465AF4D647D0C5841E881660 /* QuartzCore.framework */; };
+		C8572D26CC2BE51318329902C7705240 /* ENWebContentTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74895CB50336EB05357B106C4FE14BAD /* ENWebContentTransformer.m */; };
+		C92A9567CFF0EF4E3D1CC85390621F89 /* NSDate+TimeAgo.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E40F8600F7C677326978EDACCC4779 /* NSDate+TimeAgo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92AC61A494853D513642D168A7C9545 /* ENTTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 30608C8557173DDA493A27E58E945FF4 /* ENTTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C964FB80F51110C960C8E3909F9F9B07 /* YYTextWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 10425FE92E13438BE4BA32C953A84112 /* YYTextWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA64AEE3B8E911193B97FF50ADF8DF36 /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C350E4D04DD6933A852FD2F2D4FD6F3 /* YYTextMagnifier.m */; };
+		CB13B73380E3B8629847FEF4CF0A02BB /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE99D2D59E7FEB1D52CD47965934C73 /* YYTextEffectWindow.m */; };
+		CB48D0B7C41F6CB5169BE3750E1A4263 /* EDAMTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 562B3C4C2EE1245E39C2AB9A4072C919 /* EDAMTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB79FE09C2E7F63F4AE95D0185EE759A /* ENHTMLNoteContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5882897485E1AB29419F93E957EC23 /* ENHTMLNoteContent.m */; };
+		CBA097D5997288FCB017B4BEEE1752A2 /* RMSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AA5199B782002A55896B5162CB95BB /* RMSTextField.m */; };
+		CBE7E71519904B42CBC09D5E94EB3CD6 /* ENCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 2504088030FAD2B846ECA43A0B4FDE4F /* ENCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCC6312FA541A8A4C8764B50FB603D19 /* KSXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1655770DD9BDC926F7C8B1FBC0855126 /* KSXMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD80BE6E74D82C766583D4ACB20FC30C /* ENTException.h in Headers */ = {isa = PBXBuildFile; fileRef = 37828314F4ED9530A6D1700C86357B48 /* ENTException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDD7A6F857EBD93379FE2D18CD92C1A5 /* ENNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4BA0A53D1CC9C2F0924ED738B8BD5F /* ENNoteStoreClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09C60116E8CA52EB62EA1CBE37CE469 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C1DE278476143CA9E4F15920FF22A7 /* NSAttributedString+YYText.m */; };
+		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 761294FDE44BCF032675238532F76FDF /* UIButton+AFNetworking.m */; };
+		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB7225572D26D02F1F533064521915 /* UIProgressView+AFNetworking.m */; };
+		D4EF1A559A4048CAF6D232CB5467735C /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 224AA99229C16FEEC60E8601B128FA4D /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 014C448A12AE25E3C92A42B1785B9DB6 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E80D9D0CAF5A7CCC584D5358A2CFC42 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6628D3D79C97B5E701B5961DE9C4C5E /* NSDate+EDAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF7898D9B80D1719C72ABB6E1215721 /* NSDate+EDAMAdditions.m */; };
+		D6661D944DA4B5402DA6B57914542DF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04FC35F5D395535C35749993BD62A96 /* Security.framework */; };
+		D8251787DB7D85AFB48B2501A002FC47 /* ENLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6442B005F920DF3662349E2CC391BCC3 /* ENLoadingViewController.m */; };
+		D8E5BA8368490BAEE8E29D4A0ACB802F /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5631054A02DF9EF6563E69ED7C493B /* EDAMLimits.m */; };
+		D952B55436EB9547720506BA776DD508 /* YYTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42528C4E881574EB64D1B3775BB2F570 /* YYTextRunDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA001E15CEC04844DC40B5EA0AF83E75 /* ENNotebookTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2FB83C96CFD9FE14EB28796E477CE1 /* ENNotebookTypeView.m */; };
+		DB664AEAAAC5D407DDE51CFA3F7E8713 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67358516EB0E5B26D42A80C5A7A10ADC /* CoreFoundation.framework */; };
+		DBF829C935A53BB88F2C74C3D9DCF692 /* ENNoteSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 84827CD01C3EF9FA394FEBABE9D588CB /* ENNoteSearch.m */; };
+		DD158704AF0C3981017EEF328A557EDD /* ENNoteRefInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1939FECD7A668591F55005CB59B12C /* ENNoteRefInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1FD75001C9A65D4D152F02D559D734 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEC6A2B825A3D28A326C566087A49B92 /* ENSaveToEvernoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D77EC4FD506BFA669706FD2AA8A3144 /* ENSaveToEvernoteViewController.m */; };
+		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A147BD63950EDDC734460FEAF348FE /* AFNetworkReachabilityManager.m */; };
+		E0FBE474FCDA51E9DF92EFCC8ED830D2 /* YYTextLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5AEDF177B980E1FC03BF4342E6149D /* YYTextLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A09FE3490E35775579F19F08D3731D /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C1BA9BC26FEB0883D54401A18A02C4 /* YYTextRubyAnnotation.m */; };
+		E291096775B90E4AF1DBEC3DA5F69A47 /* ENHTMLtoENMLConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D8055EB00D5013F551D990F6F78358 /* ENHTMLtoENMLConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5936D40209C8B4B9184067C123003C7 /* NSString+XMLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 293994104076341BCA25236556EC89C1 /* NSString+XMLAdditions.m */; };
+		E63A4D779B70133B6D99EE4E17E182F1 /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 071DE8FE942FA2FA8CFAE4B630D28B41 /* YYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E738C16AF8020F2D6948D867AA7109EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C51168F0CDAF4D530D596A5C45FAB6 /* SystemConfiguration.framework */; };
+		E78D7E14F86F85F34A4C8061D593DA8D /* ENMIMEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B340930D8D547DEF66E0632F6B845B57 /* ENMIMEUtils.m */; };
+		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C165D552585D8595901F136127606A1 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E815B00BF197F4BF2DEED43931746492 /* ENTTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9714BD2F273B327ECA239815425E3A /* ENTTransport.m */; };
+		E99133841928A5485BFF124CFE44F3A8 /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 358F9CEE5F63BF19E3FD889F47ADA81A /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EC1C5534774B6B3913DA73ADB5082F /* UIView+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = A795CDD87D6C9B0D78139772C27054FF /* UIView+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA3975763ED4D7902C87AC21C36C703 /* EDAMErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 9627A74877B35EC11C75AB2FD4977ECD /* EDAMErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F02056CB4D9AEB8CB34A8A1028DE881D /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7057E237B4865CF18237E4BD466BB /* YYTextContainerView.m */; };
+		F0463B16F81A7991F691FB9F3B68F0E0 /* ENPlainNoteContent.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B85F1E8FD58DA11B528DBA008883D8 /* ENPlainNoteContent.m */; };
+		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 955B35C9552ECBB68348E120F7CDA927 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1401252417D3C424F7C86A69B917083 /* NSParagraphStyle+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = EB84105F3CFC7AD13ED991B7AD06EC79 /* NSParagraphStyle+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F162F09A7998CE7EF8AC95786373BA /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3E8BCCA5E3677F4378030F3517DF139 /* Pods-HMemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C647BBF3F39561B9868601DFF564A406 /* Pods-HMemo-dummy.m */; };
+		F4417D645C6A4A07C4DC4B763C4D6DE7 /* ENNotebook.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E334EAA5B7D6AF54285ED9470A7D40 /* ENNotebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E003C21BABCF1088F3A13FC29A6CA32 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9C468B3C4F6A6E346A96015525C5ED6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E876B23FD46F9C76DBEE4D344E5F1B /* MobileCoreServices.framework */; };
+		FA0F2F6FE4FC07D5C0683FC78AC3E7C2 /* NSDate+EDAMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F60D75993169ADFD0C656AE27DCAEC2 /* NSDate+EDAMAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3B971718F611E15885E5028FC3D88B /* NSParagraphStyle+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 754836CBCC9146568B9F37D8273B61B7 /* NSParagraphStyle+YYText.m */; };
+		FEF09BA119113AF19DB3CF40478BCA83 /* ENSDKPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F431425495EB03F0A2EAE4AD25FE29A /* ENSDKPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFC86A257D9AA24A0BD3B1312DE7C160 /* YYLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 667B254ED8FF930F2A8CC8123CBBC9EE /* YYLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C2AFA1ACE3E8547F09CE1490A7A1BFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39A3A5161A38E09903B9E94C0A78A33;
+			remoteInfo = "evernote-cloud-sdk-ios";
+		};
+		54A98EE488A1A8E00911DD338EC8FE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34570380B54CF07B477E17BD491D3D17;
+			remoteInfo = "NSDate+TimeAgo";
+		};
+		8C73555936158253046F713978D35878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 193BE2192A361377856411A18E32C90E;
+			remoteInfo = YYText;
+		};
+		BB819D6FF09939927BFE889E6EEE2A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F80E8C16C1A6F08164A5780985FBEE /* ENEncryptedContentInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENEncryptedContentInfo.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENEncryptedContentInfo.h"; sourceTree = "<group>"; };
+		014C448A12AE25E3C92A42B1785B9DB6 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		036E5A07D4BC62F072B345BBD8F2D12B /* ENPlainNoteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENPlainNoteContent.h; path = "evernote-sdk-ios/ENSDK/Private/ENPlainNoteContent.h"; sourceTree = "<group>"; };
+		04B6D171F8A6C8A1FADDE04ED4CE276E /* ENNotebookPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebookPickerView.m; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENNotebookPickerView.m"; sourceTree = "<group>"; };
+		05B6124EFD33417E8C30EBED6E30CA14 /* libYYText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYText.a; path = libYYText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		071DE8FE942FA2FA8CFAE4B630D28B41 /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYText/YYTextView.h; sourceTree = "<group>"; };
+		0740ED5109E6DAC8A000BFC1D18717DA /* ENSDKAdvanced.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSDKAdvanced.h; path = "evernote-sdk-ios/ENSDK/Advanced/ENSDKAdvanced.h"; sourceTree = "<group>"; };
+		0A7E48D6EC2AF80984D7948BE94C4411 /* ENNotebookChooserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebookChooserViewController.h; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookChooserViewController.h"; sourceTree = "<group>"; };
+		0B42C36F9EA879DEF231FEBDECA2AA2A /* ENXMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENXMLWriter.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENXMLWriter.m"; sourceTree = "<group>"; };
+		0B77C91306EBCF3D76FA8C6CAAE0C983 /* ENCommonUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENCommonUtils.m; path = "evernote-sdk-ios/ENSDK/ENCommonUtils.m"; sourceTree = "<group>"; };
+		0C38708F467E3E426CEC1872052C39F3 /* ENNotebookCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebookCell.h; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookCell.h"; sourceTree = "<group>"; };
+		0D3AE8A168F72508B396938A05628DEE /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		0E1939FECD7A668591F55005CB59B12C /* ENNoteRefInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteRefInternal.h; path = "evernote-sdk-ios/ENSDK/Private/ENNoteRefInternal.h"; sourceTree = "<group>"; };
+		0E405DF3B8DF237BC06E25BE55082BF2 /* ENNoteContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteContent.m; path = "evernote-sdk-ios/ENSDK/ENNoteContent.m"; sourceTree = "<group>"; };
+		0E80D9D0CAF5A7CCC584D5358A2CFC42 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		0E9CFB9F0BBCAC488D1CCCA2559965D8 /* FATField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FATField.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/FATField.m"; sourceTree = "<group>"; };
+		0F9F3F18AD35CF7184496FCF7BAD3185 /* ENOAuthAuthenticator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENOAuthAuthenticator.h; path = "evernote-sdk-ios/ENSDK/Private/ENOAuthAuthenticator.h"; sourceTree = "<group>"; };
+		10425FE92E13438BE4BA32C953A84112 /* YYTextWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextWeakProxy.h; path = YYText/Utility/YYTextWeakProxy.h; sourceTree = "<group>"; };
+		11366EA8003D555991A0DEA6E577ECD2 /* ENWebArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENWebArchive.m; path = "evernote-sdk-ios/ENSDK/Private/ENWebArchive.m"; sourceTree = "<group>"; };
+		12231E2D38A97D0096A3AE087B3BC502 /* Pods-HMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		152EEBFBC84E20E947EF8CCBE6CB1C3A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		15CA9EAF81CB5DA4DCF91662636691E3 /* Pods-HMemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HMemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		15F0739DE897E4691CAD81A679D0F124 /* ENWebResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENWebResource.h; path = "evernote-sdk-ios/ENSDK/Private/ENWebResource.h"; sourceTree = "<group>"; };
+		1655770DD9BDC926F7C8B1FBC0855126 /* KSXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSXMLWriter.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSXMLWriter.h"; sourceTree = "<group>"; };
+		173199DD1E8BD9B11AD70F733D3BF323 /* RMSTokenConstraintManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMSTokenConstraintManager.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTokenConstraintManager.m"; sourceTree = "<group>"; };
+		1976751CF7CA9BBB80310C361848F315 /* ENTBinaryProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTBinaryProtocol.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTBinaryProtocol.h"; sourceTree = "<group>"; };
+		1AA6795F8BF2F841884E10AA5C19DB6E /* KSWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSWriter.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSWriter.h"; sourceTree = "<group>"; };
+		1ACFE83C72C6A64609821EE62AA2D8AB /* ENSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSession.m; path = "evernote-sdk-ios/ENSDK/ENSession.m"; sourceTree = "<group>"; };
+		1B5882897485E1AB29419F93E957EC23 /* ENHTMLNoteContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENHTMLNoteContent.m; path = "evernote-sdk-ios/ENSDK/Private/ENHTMLNoteContent.m"; sourceTree = "<group>"; };
+		1BE99D2D59E7FEB1D52CD47965934C73 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYText/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
+		1C165D552585D8595901F136127606A1 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		1C350E4D04DD6933A852FD2F2D4FD6F3 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYText/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
+		1C42635A4C870751B7468355E3149F1F /* KSXMLAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSXMLAttributes.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSXMLAttributes.m"; sourceTree = "<group>"; };
+		1C4FC378BCB88175F35A234A45634FA8 /* ENAuthCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENAuthCache.m; path = "evernote-sdk-ios/ENSDK/Private/ENAuthCache.m"; sourceTree = "<group>"; };
+		1D77EC4FD506BFA669706FD2AA8A3144 /* ENSaveToEvernoteViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSaveToEvernoteViewController.m; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENSaveToEvernoteViewController.m"; sourceTree = "<group>"; };
+		1E1AB558C56ED8328EF042E7F725025B /* ENXMLUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENXMLUtils.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENXMLUtils.h"; sourceTree = "<group>"; };
+		1E4862DF991BB81E5F9095294CD495A8 /* RMSTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMSTextField.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTextField.h"; sourceTree = "<group>"; };
+		1EA683E980689BE8D2A72AC04A63B798 /* EDAMUserStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMUserStore.m; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMUserStore.m"; sourceTree = "<group>"; };
+		1FC91A9CBF65B70A38477E034CFE2363 /* EDAM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAM.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAM.h"; sourceTree = "<group>"; };
+		20E876B23FD46F9C76DBEE4D344E5F1B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		2225D05DBDDED63B82F4F66C67E4BA64 /* NSRegularExpression+ENAGRegex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRegularExpression+ENAGRegex.m"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/NSRegularExpression+ENAGRegex.m"; sourceTree = "<group>"; };
+		224AA99229C16FEEC60E8601B128FA4D /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYText/Component/YYTextInput.h; sourceTree = "<group>"; };
+		2250FB71D897C6F79C707C1348ED151D /* EDAMTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMTypes.m; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMTypes.m"; sourceTree = "<group>"; };
+		22A9507A9355D118DD6D23446BF32864 /* ENWebArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENWebArchive.h; path = "evernote-sdk-ios/ENSDK/Private/ENWebArchive.h"; sourceTree = "<group>"; };
+		22DEC51A2957D0286BA7E155C44A3A0F /* ENMLUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENMLUtility.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLUtility.h"; sourceTree = "<group>"; };
+		2439B06113B6E98F64E5DA62B0BA32B7 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		2504088030FAD2B846ECA43A0B4FDE4F /* ENCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENCredentials.h; path = "evernote-sdk-ios/ENSDK/Private/ENCredentials.h"; sourceTree = "<group>"; };
+		261340740ECD08DF690972CE15E06E75 /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYText/Component/YYTextLine.m; sourceTree = "<group>"; };
+		28404504C5D58C217468AD67AA32218A /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		2844F20319C5D1BF6899E4B9DD74819E /* ENNoteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteContent.h; path = "evernote-sdk-ios/ENSDK/ENNoteContent.h"; sourceTree = "<group>"; };
+		290BE6FEAA14DD3F6773F2E54E804DCB /* ENMLConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENMLConstants.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLConstants.m"; sourceTree = "<group>"; };
+		293994104076341BCA25236556EC89C1 /* NSString+XMLAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XMLAdditions.m"; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/NSString+XMLAdditions.m"; sourceTree = "<group>"; };
+		2DBED948DCB016CB4099CAE2D081ED59 /* ENStoreClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENStoreClient.h; path = "evernote-sdk-ios/ENSDK/Private/ENStoreClient.h"; sourceTree = "<group>"; };
+		2F16397485345F85B093E2958600D5DA /* YYTextAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAttribute.h; path = YYText/String/YYTextAttribute.h; sourceTree = "<group>"; };
+		2FA5933B728B3ABBE2F29227635E7F16 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		30608C8557173DDA493A27E58E945FF4 /* ENTTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTTransport.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTTransport.h"; sourceTree = "<group>"; };
+		325BB9E05882D6C3078F807F0E741D73 /* KSXMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSXMLWriter.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSXMLWriter.m"; sourceTree = "<group>"; };
+		32A7262E4351B9C4CF61BC32D9EAFBDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3380BA27F00E71C3ADC463AB3416028A /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		34157524C2EAEE69AC4F8C208F689033 /* ENSaveToEvernoteActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSaveToEvernoteActivity.h; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENSaveToEvernoteActivity.h"; sourceTree = "<group>"; };
+		34D8055EB00D5013F551D990F6F78358 /* ENHTMLtoENMLConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENHTMLtoENMLConverter.h; path = "evernote-sdk-ios/ENSDK/Private/ENHTMLtoENMLConverter.h"; sourceTree = "<group>"; };
+		357D131DF89A0D9C6E47A3249BD84E8A /* NSString+EDAMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+EDAMAdditions.m"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/NSString+EDAMAdditions.m"; sourceTree = "<group>"; };
+		358F9CEE5F63BF19E3FD889F47ADA81A /* YYTextEffectWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextEffectWindow.h; path = YYText/Component/YYTextEffectWindow.h; sourceTree = "<group>"; };
+		35B490C297F81ADB60218D75452FC3D5 /* ENLoadingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENLoadingViewController.h; path = "evernote-sdk-ios/ENSDK/Private/ENLoadingViewController.h"; sourceTree = "<group>"; };
+		37828314F4ED9530A6D1700C86357B48 /* ENTException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTException.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTException.h"; sourceTree = "<group>"; };
+		3826C7AE91540A342B0A78493508DBAA /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYText/Utility/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
+		3839B8C3D2ABAF90EF467522C1910E54 /* YYTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextInput.m; path = YYText/Component/YYTextInput.m; sourceTree = "<group>"; };
+		384E6EA24AC4A466A3B357CC26538566 /* EDAMNoteStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMNoteStore.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMNoteStore.h"; sourceTree = "<group>"; };
+		39E7820F202AFCD279617FEBBF152CB9 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYText/Utility/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
+		3B2F5A814BBFC7F2EC1D0868E82DBF0E /* ENMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENMLWriter.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENMLWriter.m"; sourceTree = "<group>"; };
+		3BDCFC84FB988D95E2B09DC37FD1F407 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3C1ADA1A5DDAADC94DC504622D6CF0E4 /* evernote-cloud-sdk-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "evernote-cloud-sdk-ios-prefix.pch"; sourceTree = "<group>"; };
+		3D9714BD2F273B327ECA239815425E3A /* ENTTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTTransport.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTTransport.m"; sourceTree = "<group>"; };
+		3E862A11F54A7EA37C4409F0CFAFDECA /* libPods-HMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HMemo.a"; path = "libPods-HMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4117ACBFFA7C68BFD733B615C8B24AED /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYText/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
+		42528C4E881574EB64D1B3775BB2F570 /* YYTextRunDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRunDelegate.h; path = YYText/String/YYTextRunDelegate.h; sourceTree = "<group>"; };
+		42903E326ED166227DAAC941A43B48FC /* ENMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENMLWriter.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENMLWriter.h"; sourceTree = "<group>"; };
+		42F5DE1F80E6EF934D21F7B9277D9620 /* NSString+ENScrubbing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ENScrubbing.h"; path = "evernote-sdk-ios/ENSDK/Private/NSString+ENScrubbing.h"; sourceTree = "<group>"; };
+		4480D446DAADCD2F1203D05AC93198EA /* ENEncryptedContentInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENEncryptedContentInfo.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENEncryptedContentInfo.m"; sourceTree = "<group>"; };
+		46442E6FAE3E2DEC871F1203597C2CBB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		4751FFD63C33AD854E3605A9AA1BA988 /* ENHTMLtoENMLConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENHTMLtoENMLConverter.m; path = "evernote-sdk-ios/ENSDK/Private/ENHTMLtoENMLConverter.m"; sourceTree = "<group>"; };
+		48C3D5D1F27E3E86CECAEE736B6D92CE /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYText/String/YYTextParser.h; sourceTree = "<group>"; };
+		494DFB08DE0276054F751BF60DBC878A /* ENAFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENAFURLConnectionOperation.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/AFNetworking/ENAFURLConnectionOperation.m"; sourceTree = "<group>"; };
+		4A102E28E36A4600EC6FC27EDE3AA10A /* EDAMNoteStoreClient+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EDAMNoteStoreClient+Utilities.h"; path = "evernote-sdk-ios/ENSDK/Private/EDAMNoteStoreClient+Utilities.h"; sourceTree = "<group>"; };
+		4A4B80169DF290D885320FE37F0095C9 /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYText/Utility/YYTextUtilities.m; sourceTree = "<group>"; };
+		4B2E19104F3F9EE0103626AEB61AD419 /* evernote-cloud-sdk-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "evernote-cloud-sdk-ios.xcconfig"; sourceTree = "<group>"; };
+		4BEE797DE8161044D889F908F9703CFC /* YYTextArchiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextArchiver.m; path = YYText/String/YYTextArchiver.m; sourceTree = "<group>"; };
+		4C246E6B19C6EEAC662E328602216795 /* NSData+EvernoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+EvernoteSDK.h"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/NSData+EvernoteSDK.h"; sourceTree = "<group>"; };
+		4EE4BC3C0BC962763B87AD313BBA359E /* ENSaveToEvernoteViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSaveToEvernoteViewController.h; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENSaveToEvernoteViewController.h"; sourceTree = "<group>"; };
+		4F02500D7F3A7E9163695DC739AC995D /* ENXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENXMLWriter.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENXMLWriter.h"; sourceTree = "<group>"; };
+		4F71B400465AF4D647D0C5841E881660 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		515F6EC737B036CB41AD253D295424BD /* NSData+EvernoteSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+EvernoteSDK.m"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/NSData+EvernoteSDK.m"; sourceTree = "<group>"; };
+		524B859013026215493F51B358E4E95D /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextKeyboardManager.h; path = YYText/Component/YYTextKeyboardManager.h; sourceTree = "<group>"; };
+		562B3C4C2EE1245E39C2AB9A4072C919 /* EDAMTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMTypes.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMTypes.h"; sourceTree = "<group>"; };
+		56A147BD63950EDDC734460FEAF348FE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		58C1BA9BC26FEB0883D54401A18A02C4 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYText/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
+		5956551596F998A5048242D1AF27CA56 /* ENCredentialStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENCredentialStore.h; path = "evernote-sdk-ios/ENSDK/Private/ENCredentialStore.h"; sourceTree = "<group>"; };
+		5984C5018D739E91E3DE91B4B0AEC205 /* ENTHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTHTTPClient.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTHTTPClient.m"; sourceTree = "<group>"; };
+		5A5ED125CBC74A97F8429120DA3B3942 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		5A71EBAF2F20AC5D2A6A40FF36F2CB59 /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYText/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
+		5DCAC4372C236947482E809702A2FA2C /* ENShareURLHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENShareURLHelper.m; path = "evernote-sdk-ios/ENSDK/Private/ENShareURLHelper.m"; sourceTree = "<group>"; };
+		5E003C21BABCF1088F3A13FC29A6CA32 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		5F431425495EB03F0A2EAE4AD25FE29A /* ENSDKPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSDKPrivate.h; path = "evernote-sdk-ios/ENSDK/Private/ENSDKPrivate.h"; sourceTree = "<group>"; };
+		6092188CF47AEA414115E4FEA551185E /* ENSSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSSKeychain.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/SSKeychain/ENSSKeychain.m"; sourceTree = "<group>"; };
+		6222DB65A544422608628BCE86EAAF1A /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYText/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
+		625ED6456F53EEB8F27BBBFC97A70384 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		62F717962E7B3DEC6F12302D6F92A110 /* ENNoteSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteSearch.h; path = "evernote-sdk-ios/ENSDK/ENNoteSearch.h"; sourceTree = "<group>"; };
+		63405A06EB6307D922BE789044274AC7 /* ENGCOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENGCOAuth.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/cocoa-oauth/ENGCOAuth.m"; sourceTree = "<group>"; };
+		6442B005F920DF3662349E2CC391BCC3 /* ENLoadingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENLoadingViewController.m; path = "evernote-sdk-ios/ENSDK/Private/ENLoadingViewController.m"; sourceTree = "<group>"; };
+		667B254ED8FF930F2A8CC8123CBBC9EE /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYText/YYLabel.h; sourceTree = "<group>"; };
+		66B865D9295B927DEDCC7A9457B75A6A /* ENWebResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENWebResource.m; path = "evernote-sdk-ios/ENSDK/Private/ENWebResource.m"; sourceTree = "<group>"; };
+		66C1DE278476143CA9E4F15920FF22A7 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYText/Utility/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		67358516EB0E5B26D42A80C5A7A10ADC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		677C9186C83A76B01807508BF4ED94BB /* Pods-HMemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HMemo-resources.sh"; sourceTree = "<group>"; };
+		69B8A6994534A2E2A5C5E6FEDEAE8D51 /* UIView+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYText.m"; path = "YYText/Utility/UIView+YYText.m"; sourceTree = "<group>"; };
+		69CD271F96AAFE371333543A8DDE6FD2 /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYText/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
+		6AF1C319B9D4EEF319CACD653B535AB1 /* ENSaveToEvernoteActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSaveToEvernoteActivity.m; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENSaveToEvernoteActivity.m"; sourceTree = "<group>"; };
+		6B1677E9D2E0F9A3ED47FA6B5FBAE83F /* YYTextWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextWeakProxy.m; path = YYText/Utility/YYTextWeakProxy.m; sourceTree = "<group>"; };
+		6B2FB83C96CFD9FE14EB28796E477CE1 /* ENNotebookTypeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebookTypeView.m; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookTypeView.m"; sourceTree = "<group>"; };
+		6B75F713BBC870BAB18F4D953E9D692C /* EDAMUserStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMUserStore.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMUserStore.h"; sourceTree = "<group>"; };
+		6B967BCDD6E11D24FB7616F8EFDDC658 /* ENMIMEUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENMIMEUtils.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENMIMEUtils.h"; sourceTree = "<group>"; };
+		6BBBA8C51B5E1897757BC3FB34FDEAFD /* ENCredentials.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENCredentials.m; path = "evernote-sdk-ios/ENSDK/Private/ENCredentials.m"; sourceTree = "<group>"; };
+		6C7E9752FD27E90A8A3C93450C372AEE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		6D09AE59E25D402243956F5C1031D8DC /* libevernote-cloud-sdk-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libevernote-cloud-sdk-ios.a"; path = "libevernote-cloud-sdk-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D23EE019F47F2E5BFFEC4D9F7BDC693 /* ENSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = ENSDKResources.bundle; sourceTree = "<group>"; };
+		6E8377D751AD4E69DB349A69DCE933E6 /* FATObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FATObject.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/FATObject.h"; sourceTree = "<group>"; };
+		6E87A87271C49A7D94C13FC7E98D85A4 /* FATField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FATField.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/FATField.h"; sourceTree = "<group>"; };
+		6EB0DB33FB09F288A0BF11BDF874BF6E /* ENSDKResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSDKResourceLoader.h; path = "evernote-sdk-ios/ENSDK/Private/ENSDKResourceLoader.h"; sourceTree = "<group>"; };
+		6EF360713A76B810AE6F8A5F97EE3C03 /* ENTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTProtocol.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTProtocol.m"; sourceTree = "<group>"; };
+		6F60D75993169ADFD0C656AE27DCAEC2 /* NSDate+EDAMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+EDAMAdditions.h"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/NSDate+EDAMAdditions.h"; sourceTree = "<group>"; };
+		6FF55BF08FFFAE6FEB1B351C25E65429 /* Pods-HMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HMemo.release.xcconfig"; sourceTree = "<group>"; };
+		719DCC9FB8D417B2902432E5A04C72BB /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYText/Utility/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
+		72CB130579ED334D1BD7DC4F8190DE47 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "evernote-sdk-ios/ENSDK/Private/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		72EF2DD5970018E55E33682E9D7CBDDA /* ENSDKPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSDKPrivate.m; path = "evernote-sdk-ios/ENSDK/Private/ENSDKPrivate.m"; sourceTree = "<group>"; };
+		733CF3D404CD586DF24CC051BE5738A6 /* ENNotebookTypeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebookTypeView.h; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookTypeView.h"; sourceTree = "<group>"; };
+		7349165DB7F46A987CD8BB7BF0B07CB3 /* ENTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTheme.h; path = "evernote-sdk-ios/ENSDK/Private/ENTheme.h"; sourceTree = "<group>"; };
+		746A7434C1B44855F307C23999C37D4C /* ENXMLSaxParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENXMLSaxParser.h; path = "evernote-sdk-ios/ENSDK/Private/ENXMLSaxParser.h"; sourceTree = "<group>"; };
+		74895CB50336EB05357B106C4FE14BAD /* ENWebContentTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENWebContentTransformer.m; path = "evernote-sdk-ios/ENSDK/Private/ENWebContentTransformer.m"; sourceTree = "<group>"; };
+		754836CBCC9146568B9F37D8273B61B7 /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSParagraphStyle+YYText.m"; path = "YYText/Utility/NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
+		761294FDE44BCF032675238532F76FDF /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		76AA5199B782002A55896B5162CB95BB /* RMSTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMSTextField.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTextField.m"; sourceTree = "<group>"; };
+		79A96A4D791A133484E722855D6BA67B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		7ACB16F495DE7F8BE075266A04B53C1B /* KSWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSWriter.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSWriter.m"; sourceTree = "<group>"; };
+		7B1C5C2FDE0F43E35F4AC8623CC41EC1 /* ENSSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSSKeychainQuery.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/SSKeychain/ENSSKeychainQuery.m"; sourceTree = "<group>"; };
+		7B4AB9374B1046A5905B13584E7B210E /* evernote-cloud-sdk-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "evernote-cloud-sdk-ios-dummy.m"; sourceTree = "<group>"; };
+		7BC7057E237B4865CF18237E4BD466BB /* YYTextContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextContainerView.m; path = YYText/Component/YYTextContainerView.m; sourceTree = "<group>"; };
+		7C89594ABB6BB96EDB32A1213DC6F15D /* ENError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENError.h; path = "evernote-sdk-ios/ENSDK/ENError.h"; sourceTree = "<group>"; };
+		7DB7BB48B30E51733E1BFA482C690186 /* EDAMNoteStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMNoteStore.m; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMNoteStore.m"; sourceTree = "<group>"; };
+		7F06D6519AA441F556CB686382B701B1 /* NSString+EDAMNilAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+EDAMNilAdditions.h"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/NSString+EDAMNilAdditions.h"; sourceTree = "<group>"; };
+		7F086E584F7433EBFC28626628D3581E /* ENXMLSaxParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENXMLSaxParser.m; path = "evernote-sdk-ios/ENSDK/Private/ENXMLSaxParser.m"; sourceTree = "<group>"; };
+		811992370AB6FC0B3E25B1EEC0092BD6 /* ENNotebookPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebookPickerView.h; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENNotebookPickerView.h"; sourceTree = "<group>"; };
+		81CB7225572D26D02F1F533064521915 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		81E40F8600F7C677326978EDACCC4779 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		82A9849692BE7CF3BFC329B3888FA01D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		84827CD01C3EF9FA394FEBABE9D588CB /* ENNoteSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteSearch.m; path = "evernote-sdk-ios/ENSDK/ENNoteSearch.m"; sourceTree = "<group>"; };
+		84B7879B3E6B34F102C26D49A1412E88 /* ENNotebookChooserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebookChooserViewController.m; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookChooserViewController.m"; sourceTree = "<group>"; };
+		85DE70EF6F6C7D01E22880ED036C4D74 /* libNSDate+TimeAgo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libNSDate+TimeAgo.a"; path = "libNSDate+TimeAgo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710DF6CFB97A229128BD11271BBBF72 /* ENError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENError.m; path = "evernote-sdk-ios/ENSDK/ENError.m"; sourceTree = "<group>"; };
+		887221903CA8942E3CDFA51FFE9C1BEB /* NSRegularExpression+ENAGRegex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRegularExpression+ENAGRegex.h"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/NSRegularExpression+ENAGRegex.h"; sourceTree = "<group>"; };
+		8A1FD75001C9A65D4D152F02D559D734 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		8B5D5F052BA65DD7CD23914D0336AA18 /* ENLinkedNotebookRef.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENLinkedNotebookRef.m; path = "evernote-sdk-ios/ENSDK/Private/ENLinkedNotebookRef.m"; sourceTree = "<group>"; };
+		8BC5AEED06E07C63D7054E44AE36FEF7 /* ENSDKLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSDKLogging.h; path = "evernote-sdk-ios/ENSDK/ENSDKLogging.h"; sourceTree = "<group>"; };
+		8C779039F35EE3A026D75A515D0C16B0 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		8D17A3D6AD9927C11435E0F4334321DA /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		8D23C0757C85627B4B350B80DBE6F595 /* Pods-HMemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HMemo-frameworks.sh"; sourceTree = "<group>"; };
+		8EF003493D66A869943D1FE765258D91 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		8F2CDFDA8E6514D1E8B91983FC8684AC /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYText/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
+		9109432FE702F478C988B8250142F76F /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		9137209A7F44AF28DA94A94FCBC14A67 /* ENNoteStoreClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteStoreClient.m; path = "evernote-sdk-ios/ENSDK/Advanced/ENNoteStoreClient.m"; sourceTree = "<group>"; };
+		91A45B50B280B6220262B6ED6A620F20 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		955B35C9552ECBB68348E120F7CDA927 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		9627A74877B35EC11C75AB2FD4977ECD /* EDAMErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMErrors.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMErrors.h"; sourceTree = "<group>"; };
+		9650851B05930E09DF798892A21F69D6 /* ENNotebookPickerButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebookPickerButton.h; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENNotebookPickerButton.h"; sourceTree = "<group>"; };
+		96C51168F0CDAF4D530D596A5C45FAB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		972D44B1D07E89EF229F4B0CA594D315 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		97E5BAD6DC05BCDE74804A8346DC4E00 /* EDAMNoteStoreClient+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EDAMNoteStoreClient+Utilities.m"; path = "evernote-sdk-ios/ENSDK/Private/EDAMNoteStoreClient+Utilities.m"; sourceTree = "<group>"; };
+		98CBE7FA3144F13A1DB32F7BB969A0E1 /* ENXMLDTD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENXMLDTD.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENXMLDTD.h"; sourceTree = "<group>"; };
+		9A2555644CF5B630DA50540D72CFCBA9 /* ENPreferencesStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENPreferencesStore.m; path = "evernote-sdk-ios/ENSDK/Advanced/ENPreferencesStore.m"; sourceTree = "<group>"; };
+		9ACFA7EACFD38F3533560091C911B464 /* KSForwardingWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSForwardingWriter.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSForwardingWriter.m"; sourceTree = "<group>"; };
+		9AEE920C7CBF022353852035797F65F4 /* EDAMErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMErrors.m; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMErrors.m"; sourceTree = "<group>"; };
+		9AF7335C121400E5397021D153D905FD /* KSXMLAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSXMLAttributes.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSXMLAttributes.h"; sourceTree = "<group>"; };
+		9BDFC66137440E1652EBBB70B4489017 /* ENSDKResourceLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSDKResourceLoader.m; path = "evernote-sdk-ios/ENSDK/Private/ENSDKResourceLoader.m"; sourceTree = "<group>"; };
+		9CEABA7E05300E330D5866DA695CFBB6 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		9DC30EE3E6BF9A806201E4B646838FB8 /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYText/Component/YYTextContainerView.h; sourceTree = "<group>"; };
+		9DD1B51622D92B81ECAF8DFDE9CE131E /* ENAFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENAFURLConnectionOperation.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/AFNetworking/ENAFURLConnectionOperation.h"; sourceTree = "<group>"; };
+		9F1E16473885988270B00A418109435A /* ENUserStoreClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENUserStoreClient.h; path = "evernote-sdk-ios/ENSDK/Advanced/ENUserStoreClient.h"; sourceTree = "<group>"; };
+		9F5AEDF177B980E1FC03BF4342E6149D /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYText/Component/YYTextLayout.h; sourceTree = "<group>"; };
+		9FF584C5CEAEEB05E52FFCC41C20F858 /* YYText.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYText.xcconfig; sourceTree = "<group>"; };
+		A00F58EC30C54D5F18E92B1708A24C5C /* Pods-HMemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HMemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A13A89920D48F6F2F4EB959792B42A81 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "evernote-sdk-ios/ENSDK/Private/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		A22D1EE69644789689B81294D3FDD51C /* YYTextUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextUtilities.h; path = YYText/Utility/YYTextUtilities.h; sourceTree = "<group>"; };
+		A3D81EAB62ADA150D49E27FD413EC55A /* ENLinkedNotebookRef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENLinkedNotebookRef.h; path = "evernote-sdk-ios/ENSDK/Private/ENLinkedNotebookRef.h"; sourceTree = "<group>"; };
+		A474A450E99463E23BD2A1B2AF05A911 /* YYText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-prefix.pch"; sourceTree = "<group>"; };
+		A54B8E4DA712DFBE6E0AC81FB3ADBF9B /* ENSSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSSKeychainQuery.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/SSKeychain/ENSSKeychainQuery.h"; sourceTree = "<group>"; };
+		A5F09D8F097DA66B82AA1CC0405B36D1 /* ENCommonUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENCommonUtils.h; path = "evernote-sdk-ios/ENSDK/ENCommonUtils.h"; sourceTree = "<group>"; };
+		A62FA9721DD302C5849588B2FC86811E /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
+		A7418E185360A0C870713EC84AD5EC89 /* RMSTokenView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMSTokenView.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTokenView.m"; sourceTree = "<group>"; };
+		A795CDD87D6C9B0D78139772C27054FF /* UIView+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYText.h"; path = "YYText/Utility/UIView+YYText.h"; sourceTree = "<group>"; };
+		A8A5C84335B26025450997415F5A05A4 /* ENHTMLNoteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENHTMLNoteContent.h; path = "evernote-sdk-ios/ENSDK/Private/ENHTMLNoteContent.h"; sourceTree = "<group>"; };
+		A947BEBBC6CA4AE4F2C23AE49C664521 /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYText/YYLabel.m; sourceTree = "<group>"; };
+		A94872C5F27BD14C025D20272721B17F /* ENCredentialStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENCredentialStore.m; path = "evernote-sdk-ios/ENSDK/Private/ENCredentialStore.m"; sourceTree = "<group>"; };
+		AA46D273EF702347811C7479F7FA5349 /* ENGCOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENGCOAuth.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/cocoa-oauth/ENGCOAuth.h"; sourceTree = "<group>"; };
+		AA96834F8D96EFB2FAA711C1F314C50E /* ENTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTProtocol.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTProtocol.h"; sourceTree = "<group>"; };
+		ABA5ADAA83586F831910DF31060BE47A /* KSHTMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSHTMLWriter.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSHTMLWriter.m"; sourceTree = "<group>"; };
+		ACFD354C04B33CF232285A0278F9FAE7 /* ENWebContentTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENWebContentTransformer.h; path = "evernote-sdk-ios/ENSDK/Private/ENWebContentTransformer.h"; sourceTree = "<group>"; };
+		AE7A5F0FB1BE11658EF838AA1822B343 /* ENStoreClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENStoreClient.m; path = "evernote-sdk-ios/ENSDK/Private/ENStoreClient.m"; sourceTree = "<group>"; };
+		AEB3D59BED14560ECD409F23F7C57395 /* YYText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYText-dummy.m"; sourceTree = "<group>"; };
+		AEC134A1B1C7CA57981FF38C758E9BEE /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		AF4136B1FA2D79502ABE90BF349438BF /* RMSTokenView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMSTokenView.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTokenView.h"; sourceTree = "<group>"; };
+		B11D988BBC83287681C5D271121CBF53 /* ENLinkedNoteStoreClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENLinkedNoteStoreClient.m; path = "evernote-sdk-ios/ENSDK/Private/ENLinkedNoteStoreClient.m"; sourceTree = "<group>"; };
+		B237559FEE228CBC6AAE28B398FA3ECB /* ENShareURLHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENShareURLHelper.h; path = "evernote-sdk-ios/ENSDK/Private/ENShareURLHelper.h"; sourceTree = "<group>"; };
+		B273B848FA2EEA1497727AC64986C617 /* ENMLUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENMLUtility.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLUtility.m"; sourceTree = "<group>"; };
+		B2851E9630D5B24B448628CA68ADED83 /* ENTBinaryProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTBinaryProtocol.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTBinaryProtocol.m"; sourceTree = "<group>"; };
+		B340930D8D547DEF66E0632F6B845B57 /* ENMIMEUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENMIMEUtils.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENMIMEUtils.m"; sourceTree = "<group>"; };
+		B4CC2870E2BC059E9BEA9A8A900F1BE6 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		B623B5FC6DC6751E5D0D8BA7333CC0E4 /* EDAMLimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMLimits.h; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMLimits.h"; sourceTree = "<group>"; };
+		B63F6B603DC32EED93864D7E4FA8B1A2 /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYText/String/YYTextAttribute.m; sourceTree = "<group>"; };
+		B735863B303D4EEE643941CD7CF87E1A /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		B75B9FB63A4530DC1BFFDBC9D5321F94 /* ENTHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENTHTTPClient.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTHTTPClient.h"; sourceTree = "<group>"; };
+		B938925A2024D3016918438D844BF2B2 /* ENNoteRef.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteRef.m; path = "evernote-sdk-ios/ENSDK/ENNoteRef.m"; sourceTree = "<group>"; };
+		B9F63CC3E21DBD20C85ABE0C62DB20B3 /* ENResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENResource.h; path = "evernote-sdk-ios/ENSDK/ENResource.h"; sourceTree = "<group>"; };
+		BA9077F9A7127650B211F36D0DE44DDA /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYText/YYTextView.m; sourceTree = "<group>"; };
+		BAC3D29BE73368B6ECE7917AF077FEC7 /* ENResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENResource.m; path = "evernote-sdk-ios/ENSDK/ENResource.m"; sourceTree = "<group>"; };
+		BBA38AE61ACD4D40F3AFF373C0BDD45C /* NSString+ENScrubbing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ENScrubbing.m"; path = "evernote-sdk-ios/ENSDK/Private/NSString+ENScrubbing.m"; sourceTree = "<group>"; };
+		BCFBF896B0255FB2F9DD547E302BA0A8 /* ENMLConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENMLConstants.h; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLConstants.h"; sourceTree = "<group>"; };
+		BDC61882A82380BE64FC93BDCA4D310B /* ENPreferencesStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENPreferencesStore.h; path = "evernote-sdk-ios/ENSDK/Advanced/ENPreferencesStore.h"; sourceTree = "<group>"; };
+		BE311334268325E838CC4F3D4550B457 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		C068B9E49CA40D551EABC8A4DDA31DC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C2FF9C743BC98B327A1E1406CB57C25C /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYText/String/YYTextArchiver.h; sourceTree = "<group>"; };
+		C374C4C04FFB34FE01F346746BC0AEB0 /* ENUserStoreClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENUserStoreClient.m; path = "evernote-sdk-ios/ENSDK/Advanced/ENUserStoreClient.m"; sourceTree = "<group>"; };
+		C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C49016CCCA0ADEE0C6810D01FAE88018 /* ENBusinessNoteStoreClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENBusinessNoteStoreClient.m; path = "evernote-sdk-ios/ENSDK/Private/ENBusinessNoteStoreClient.m"; sourceTree = "<group>"; };
+		C51B3C7C68D98FED83B46DF48BB186C8 /* ENTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTheme.m; path = "evernote-sdk-ios/ENSDK/Private/ENTheme.m"; sourceTree = "<group>"; };
+		C5FB5D6FF6F01CD360B546B43F68193E /* ENSSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSSKeychain.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/SSKeychain/ENSSKeychain.h"; sourceTree = "<group>"; };
+		C6268EB6187FCCBAD1CE5FBE81D4583E /* NSDate+TimeAgo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo-prefix.pch"; sourceTree = "<group>"; };
+		C647BBF3F39561B9868601DFF564A406 /* Pods-HMemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HMemo-dummy.m"; sourceTree = "<group>"; };
+		C817D00E20189B9DC83C1C9EE83FA298 /* ENNoteRef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteRef.h; path = "evernote-sdk-ios/ENSDK/ENNoteRef.h"; sourceTree = "<group>"; };
+		C9E334EAA5B7D6AF54285ED9470A7D40 /* ENNotebook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNotebook.h; path = "evernote-sdk-ios/ENSDK/ENNotebook.h"; sourceTree = "<group>"; };
+		CAB05998FD45E48402D9C68DD2F1A52E /* ENLinkedNoteStoreClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENLinkedNoteStoreClient.h; path = "evernote-sdk-ios/ENSDK/Private/ENLinkedNoteStoreClient.h"; sourceTree = "<group>"; };
+		CB06955452538DAD2BCAEC42152E4CDB /* ENNotebookPickerButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebookPickerButton.m; path = "evernote-sdk-ios/ENSDK/SendToEvernoteActivity/ENNotebookPickerButton.m"; sourceTree = "<group>"; };
+		CE7863F89B34B932DFD517A11CFCBE26 /* ENWebClipNoteBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENWebClipNoteBuilder.h; path = "evernote-sdk-ios/ENSDK/Private/ENWebClipNoteBuilder.h"; sourceTree = "<group>"; };
+		D3A43882AAABC5957DAA5E21804BF2F5 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
+		D3C44D797F3C8F9B99697E15C2DE81D2 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		D4172433A391CAE20B5D998C2128F6C8 /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
+		D628E7A1E3A284EA3E03752C067B4D38 /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYText/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
+		D6AF6DD9C09EC4A813B3C0101005C125 /* ENSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSDK.h; path = "evernote-sdk-ios/ENSDK/ENSDK.h"; sourceTree = "<group>"; };
+		D7B85F1E8FD58DA11B528DBA008883D8 /* ENPlainNoteContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENPlainNoteContent.m; path = "evernote-sdk-ios/ENSDK/Private/ENPlainNoteContent.m"; sourceTree = "<group>"; };
+		D9B6B53BCA5073A58D65448B0092DD77 /* ENOAuthViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENOAuthViewController.m; path = "evernote-sdk-ios/ENSDK/Private/ENOAuthViewController.m"; sourceTree = "<group>"; };
+		DAE8664BD7BA4AE9AD2F17F16919E531 /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYText/String/YYTextParser.m; sourceTree = "<group>"; };
+		DC5666B72A750B2854554FBBC32F6836 /* ENOAuthAuthenticator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENOAuthAuthenticator.m; path = "evernote-sdk-ios/ENSDK/Private/ENOAuthAuthenticator.m"; sourceTree = "<group>"; };
+		DCC01C3A33FB4DD8B434D184B51CAFDC /* ENTException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENTException.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/ENTException.m"; sourceTree = "<group>"; };
+		DD4BA0A53D1CC9C2F0924ED738B8BD5F /* ENNoteStoreClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteStoreClient.h; path = "evernote-sdk-ios/ENSDK/Advanced/ENNoteStoreClient.h"; sourceTree = "<group>"; };
+		DEB46A03C8CAF62766B3ED0761D49A24 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DF23E1032A135515261A5C08912CDAC4 /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYText/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
+		DFFA23AADEFE3C072504FF14600FF6E3 /* ENNote.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNote.m; path = "evernote-sdk-ios/ENSDK/ENNote.m"; sourceTree = "<group>"; };
+		E047EA0B194C7C82C12FED89F77A3EE6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		E04FC35F5D395535C35749993BD62A96 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		E259FD1F1A62B8FF58D6E5EDCC20C815 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		E296DC253D6F44F3E9C8EB9909CA3891 /* YYTextLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLine.h; path = YYText/Component/YYTextLine.h; sourceTree = "<group>"; };
+		E43FE3BAC55E9116EAE5C128F0F2AFB8 /* ENNotebook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebook.m; path = "evernote-sdk-ios/ENSDK/ENNotebook.m"; sourceTree = "<group>"; };
+		E4F162F09A7998CE7EF8AC95786373BA /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		E51B1787CEB725C51BF8BA4AE79C75D6 /* RMSTokenConstraintManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMSTokenConstraintManager.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/RMSTokenView/RMSTokenConstraintManager.h"; sourceTree = "<group>"; };
+		E5C090C3646C3382AF64B8137093B0AF /* KSHTMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSHTMLWriter.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSHTMLWriter.h"; sourceTree = "<group>"; };
+		E6F47857694DA022B4EA59EB99E82097 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		E87EC5E69B4ACE8138D648366A89B891 /* NSDate+TimeAgo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSDate+TimeAgo.xcconfig"; sourceTree = "<group>"; };
+		E8E39D5DCF9FA638B8665C5D75AE1275 /* NSDate+TimeAgo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo-dummy.m"; sourceTree = "<group>"; };
+		E9479642E2D1A028561626B7D604151C /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYText/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
+		E9B17B70DB4B72E4608E6AF7CE1FA51C /* ENNotebookCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNotebookCell.m; path = "evernote-sdk-ios/ENSDK/Private/ENNotebookCell.m"; sourceTree = "<group>"; };
+		EB4A322CE09BC9148CE5557A0B301634 /* ENWebClipNoteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENWebClipNoteBuilder.m; path = "evernote-sdk-ios/ENSDK/Private/ENWebClipNoteBuilder.m"; sourceTree = "<group>"; };
+		EB84105F3CFC7AD13ED991B7AD06EC79 /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+YYText.h"; path = "YYText/Utility/NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
+		EC25FD8EEB3CA0461A4C566B2CBAA62B /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		ED8F8DCD06CEA49CEECED8496BB7CAA0 /* ENOAuthViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENOAuthViewController.h; path = "evernote-sdk-ios/ENSDK/Private/ENOAuthViewController.h"; sourceTree = "<group>"; };
+		EDF7898D9B80D1719C72ABB6E1215721 /* NSDate+EDAMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+EDAMAdditions.m"; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/NSDate+EDAMAdditions.m"; sourceTree = "<group>"; };
+		EF10BC3AD6D42BF771A907FEA838B5B5 /* KSForwardingWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSForwardingWriter.h; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/KSForwardingWriter.h"; sourceTree = "<group>"; };
+		EF5631054A02DF9EF6563E69ED7C493B /* EDAMLimits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMLimits.m; path = "evernote-sdk-ios/ENSDK/Advanced/EDAM/EDAMLimits.m"; sourceTree = "<group>"; };
+		F0543193C1AB1C8F82BA4BDA1CBAD88F /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		F1A921036A64EEF8FA3B77AFDB0817B8 /* FATObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FATObject.m; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/Thrift/FATObject.m"; sourceTree = "<group>"; };
+		F27154756FBE71A0897B758A13363BF3 /* ENSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSession.h; path = "evernote-sdk-ios/ENSDK/ENSession.h"; sourceTree = "<group>"; };
+		F6EFA2B032DCDAE0070C608811C31523 /* ENBusinessNoteStoreClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENBusinessNoteStoreClient.h; path = "evernote-sdk-ios/ENSDK/Private/ENBusinessNoteStoreClient.h"; sourceTree = "<group>"; };
+		F817CF8D1065129FCAAFE9377C98B847 /* ENAuthCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENAuthCache.h; path = "evernote-sdk-ios/ENSDK/Private/ENAuthCache.h"; sourceTree = "<group>"; };
+		F9C244AAC714972C6AB70376392E242E /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAsyncLayer.m; path = YYText/Utility/YYTextAsyncLayer.m; sourceTree = "<group>"; };
+		FA6A20A3C39F53B3099D73D4A01FF747 /* ENNote.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNote.h; path = "evernote-sdk-ios/ENSDK/ENNote.h"; sourceTree = "<group>"; };
+		FC9A84DC643EB09F41B5A3052BB33E8E /* YYTextTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextTransaction.h; path = YYText/Utility/YYTextTransaction.h; sourceTree = "<group>"; };
+		FCBD42AB60AA5CD5BF6E62CEC2FAC691 /* NSString+XMLAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XMLAdditions.h"; path = "evernote-sdk-ios/ENSDK/Private/3rdParty/KSHTMLWriter/NSString+XMLAdditions.h"; sourceTree = "<group>"; };
+		FD09876713D30D1EC5F6B86218E3E353 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		FD986940510B9B93814C856AAC013934 /* ENXMLDTD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENXMLDTD.m; path = "evernote-sdk-ios/ENSDK/Advanced/Utilities/ENMLWriter/ENXMLDTD.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35536BF1E9C0A931A92E17EF3761BF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E10EF602B33E2E7247076E25B75AE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58002ED35077197D0F8D24E7ED93441D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3298059BCF0CD9F1C2E2D47F9EFF7B4E /* Accelerate.framework in Frameworks */,
+				DB664AEAAAC5D407DDE51CFA3F7E8713 /* CoreFoundation.framework in Frameworks */,
+				C32DD380339BE22F83A5D5B663856F14 /* CoreText.framework in Frameworks */,
+				968388BDB3C30C7D3157C07FDDEBE09E /* Foundation.framework in Frameworks */,
+				F9C468B3C4F6A6E346A96015525C5ED6 /* MobileCoreServices.framework in Frameworks */,
+				C6BD2D885E241DB24268B6210FFE7946 /* QuartzCore.framework in Frameworks */,
+				9BF840EC134B3DA2C144917007D96375 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC0ECBDD87C17959C59C70AE622928B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C411ECF88F1CA6D85AD5143244B4200D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655EE37074515BB8C12B40C4F3B85870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EA55580679A8DEB1231F61C2244F040 /* CoreGraphics.framework in Frameworks */,
+				214F120FB507BF07B860FFF410657E78 /* Foundation.framework in Frameworks */,
+				B7A9D38622C4A19A342C9613F21A025D /* MobileCoreServices.framework in Frameworks */,
+				3225233E23F16DD8289F477E10F45F71 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2843898C40D365BC1361BF1CD832E9B2 /* CoreGraphics.framework in Frameworks */,
+				AFD0634B4D580C7C585C242BE0008A0E /* Foundation.framework in Frameworks */,
+				8B1E1A45E0B423395CE2A513BB1B1010 /* MobileCoreServices.framework in Frameworks */,
+				D6661D944DA4B5402DA6B57914542DF9 /* Security.framework in Frameworks */,
+				E738C16AF8020F2D6948D867AA7109EF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B37975ED0F382AB8672C2AFC64941AB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FD75001C9A65D4D152F02D559D734 /* AFNetworkReachabilityManager.h */,
+				56A147BD63950EDDC734460FEAF348FE /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		1B78E6A48CEB6F3A42525854D321616B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0D5D50DD8A9C73D4413D006F03FA279 /* Pods-HMemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2F32C4F245407E0D6BBDE372B9E7B109 /* evernote-cloud-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				1FC91A9CBF65B70A38477E034CFE2363 /* EDAM.h */,
+				9627A74877B35EC11C75AB2FD4977ECD /* EDAMErrors.h */,
+				9AEE920C7CBF022353852035797F65F4 /* EDAMErrors.m */,
+				B623B5FC6DC6751E5D0D8BA7333CC0E4 /* EDAMLimits.h */,
+				EF5631054A02DF9EF6563E69ED7C493B /* EDAMLimits.m */,
+				384E6EA24AC4A466A3B357CC26538566 /* EDAMNoteStore.h */,
+				7DB7BB48B30E51733E1BFA482C690186 /* EDAMNoteStore.m */,
+				4A102E28E36A4600EC6FC27EDE3AA10A /* EDAMNoteStoreClient+Utilities.h */,
+				97E5BAD6DC05BCDE74804A8346DC4E00 /* EDAMNoteStoreClient+Utilities.m */,
+				562B3C4C2EE1245E39C2AB9A4072C919 /* EDAMTypes.h */,
+				2250FB71D897C6F79C707C1348ED151D /* EDAMTypes.m */,
+				6B75F713BBC870BAB18F4D953E9D692C /* EDAMUserStore.h */,
+				1EA683E980689BE8D2A72AC04A63B798 /* EDAMUserStore.m */,
+				9DD1B51622D92B81ECAF8DFDE9CE131E /* ENAFURLConnectionOperation.h */,
+				494DFB08DE0276054F751BF60DBC878A /* ENAFURLConnectionOperation.m */,
+				F817CF8D1065129FCAAFE9377C98B847 /* ENAuthCache.h */,
+				1C4FC378BCB88175F35A234A45634FA8 /* ENAuthCache.m */,
+				F6EFA2B032DCDAE0070C608811C31523 /* ENBusinessNoteStoreClient.h */,
+				C49016CCCA0ADEE0C6810D01FAE88018 /* ENBusinessNoteStoreClient.m */,
+				A5F09D8F097DA66B82AA1CC0405B36D1 /* ENCommonUtils.h */,
+				0B77C91306EBCF3D76FA8C6CAAE0C983 /* ENCommonUtils.m */,
+				2504088030FAD2B846ECA43A0B4FDE4F /* ENCredentials.h */,
+				6BBBA8C51B5E1897757BC3FB34FDEAFD /* ENCredentials.m */,
+				5956551596F998A5048242D1AF27CA56 /* ENCredentialStore.h */,
+				A94872C5F27BD14C025D20272721B17F /* ENCredentialStore.m */,
+				00F80E8C16C1A6F08164A5780985FBEE /* ENEncryptedContentInfo.h */,
+				4480D446DAADCD2F1203D05AC93198EA /* ENEncryptedContentInfo.m */,
+				7C89594ABB6BB96EDB32A1213DC6F15D /* ENError.h */,
+				8710DF6CFB97A229128BD11271BBBF72 /* ENError.m */,
+				AA46D273EF702347811C7479F7FA5349 /* ENGCOAuth.h */,
+				63405A06EB6307D922BE789044274AC7 /* ENGCOAuth.m */,
+				A8A5C84335B26025450997415F5A05A4 /* ENHTMLNoteContent.h */,
+				1B5882897485E1AB29419F93E957EC23 /* ENHTMLNoteContent.m */,
+				34D8055EB00D5013F551D990F6F78358 /* ENHTMLtoENMLConverter.h */,
+				4751FFD63C33AD854E3605A9AA1BA988 /* ENHTMLtoENMLConverter.m */,
+				A3D81EAB62ADA150D49E27FD413EC55A /* ENLinkedNotebookRef.h */,
+				8B5D5F052BA65DD7CD23914D0336AA18 /* ENLinkedNotebookRef.m */,
+				CAB05998FD45E48402D9C68DD2F1A52E /* ENLinkedNoteStoreClient.h */,
+				B11D988BBC83287681C5D271121CBF53 /* ENLinkedNoteStoreClient.m */,
+				35B490C297F81ADB60218D75452FC3D5 /* ENLoadingViewController.h */,
+				6442B005F920DF3662349E2CC391BCC3 /* ENLoadingViewController.m */,
+				6B967BCDD6E11D24FB7616F8EFDDC658 /* ENMIMEUtils.h */,
+				B340930D8D547DEF66E0632F6B845B57 /* ENMIMEUtils.m */,
+				BCFBF896B0255FB2F9DD547E302BA0A8 /* ENMLConstants.h */,
+				290BE6FEAA14DD3F6773F2E54E804DCB /* ENMLConstants.m */,
+				22DEC51A2957D0286BA7E155C44A3A0F /* ENMLUtility.h */,
+				B273B848FA2EEA1497727AC64986C617 /* ENMLUtility.m */,
+				42903E326ED166227DAAC941A43B48FC /* ENMLWriter.h */,
+				3B2F5A814BBFC7F2EC1D0868E82DBF0E /* ENMLWriter.m */,
+				FA6A20A3C39F53B3099D73D4A01FF747 /* ENNote.h */,
+				DFFA23AADEFE3C072504FF14600FF6E3 /* ENNote.m */,
+				C9E334EAA5B7D6AF54285ED9470A7D40 /* ENNotebook.h */,
+				E43FE3BAC55E9116EAE5C128F0F2AFB8 /* ENNotebook.m */,
+				0C38708F467E3E426CEC1872052C39F3 /* ENNotebookCell.h */,
+				E9B17B70DB4B72E4608E6AF7CE1FA51C /* ENNotebookCell.m */,
+				0A7E48D6EC2AF80984D7948BE94C4411 /* ENNotebookChooserViewController.h */,
+				84B7879B3E6B34F102C26D49A1412E88 /* ENNotebookChooserViewController.m */,
+				9650851B05930E09DF798892A21F69D6 /* ENNotebookPickerButton.h */,
+				CB06955452538DAD2BCAEC42152E4CDB /* ENNotebookPickerButton.m */,
+				811992370AB6FC0B3E25B1EEC0092BD6 /* ENNotebookPickerView.h */,
+				04B6D171F8A6C8A1FADDE04ED4CE276E /* ENNotebookPickerView.m */,
+				733CF3D404CD586DF24CC051BE5738A6 /* ENNotebookTypeView.h */,
+				6B2FB83C96CFD9FE14EB28796E477CE1 /* ENNotebookTypeView.m */,
+				2844F20319C5D1BF6899E4B9DD74819E /* ENNoteContent.h */,
+				0E405DF3B8DF237BC06E25BE55082BF2 /* ENNoteContent.m */,
+				C817D00E20189B9DC83C1C9EE83FA298 /* ENNoteRef.h */,
+				B938925A2024D3016918438D844BF2B2 /* ENNoteRef.m */,
+				0E1939FECD7A668591F55005CB59B12C /* ENNoteRefInternal.h */,
+				62F717962E7B3DEC6F12302D6F92A110 /* ENNoteSearch.h */,
+				84827CD01C3EF9FA394FEBABE9D588CB /* ENNoteSearch.m */,
+				DD4BA0A53D1CC9C2F0924ED738B8BD5F /* ENNoteStoreClient.h */,
+				9137209A7F44AF28DA94A94FCBC14A67 /* ENNoteStoreClient.m */,
+				0F9F3F18AD35CF7184496FCF7BAD3185 /* ENOAuthAuthenticator.h */,
+				DC5666B72A750B2854554FBBC32F6836 /* ENOAuthAuthenticator.m */,
+				ED8F8DCD06CEA49CEECED8496BB7CAA0 /* ENOAuthViewController.h */,
+				D9B6B53BCA5073A58D65448B0092DD77 /* ENOAuthViewController.m */,
+				036E5A07D4BC62F072B345BBD8F2D12B /* ENPlainNoteContent.h */,
+				D7B85F1E8FD58DA11B528DBA008883D8 /* ENPlainNoteContent.m */,
+				BDC61882A82380BE64FC93BDCA4D310B /* ENPreferencesStore.h */,
+				9A2555644CF5B630DA50540D72CFCBA9 /* ENPreferencesStore.m */,
+				B9F63CC3E21DBD20C85ABE0C62DB20B3 /* ENResource.h */,
+				BAC3D29BE73368B6ECE7917AF077FEC7 /* ENResource.m */,
+				34157524C2EAEE69AC4F8C208F689033 /* ENSaveToEvernoteActivity.h */,
+				6AF1C319B9D4EEF319CACD653B535AB1 /* ENSaveToEvernoteActivity.m */,
+				4EE4BC3C0BC962763B87AD313BBA359E /* ENSaveToEvernoteViewController.h */,
+				1D77EC4FD506BFA669706FD2AA8A3144 /* ENSaveToEvernoteViewController.m */,
+				D6AF6DD9C09EC4A813B3C0101005C125 /* ENSDK.h */,
+				0740ED5109E6DAC8A000BFC1D18717DA /* ENSDKAdvanced.h */,
+				8BC5AEED06E07C63D7054E44AE36FEF7 /* ENSDKLogging.h */,
+				5F431425495EB03F0A2EAE4AD25FE29A /* ENSDKPrivate.h */,
+				72EF2DD5970018E55E33682E9D7CBDDA /* ENSDKPrivate.m */,
+				6EB0DB33FB09F288A0BF11BDF874BF6E /* ENSDKResourceLoader.h */,
+				9BDFC66137440E1652EBBB70B4489017 /* ENSDKResourceLoader.m */,
+				F27154756FBE71A0897B758A13363BF3 /* ENSession.h */,
+				1ACFE83C72C6A64609821EE62AA2D8AB /* ENSession.m */,
+				B237559FEE228CBC6AAE28B398FA3ECB /* ENShareURLHelper.h */,
+				5DCAC4372C236947482E809702A2FA2C /* ENShareURLHelper.m */,
+				C5FB5D6FF6F01CD360B546B43F68193E /* ENSSKeychain.h */,
+				6092188CF47AEA414115E4FEA551185E /* ENSSKeychain.m */,
+				A54B8E4DA712DFBE6E0AC81FB3ADBF9B /* ENSSKeychainQuery.h */,
+				7B1C5C2FDE0F43E35F4AC8623CC41EC1 /* ENSSKeychainQuery.m */,
+				2DBED948DCB016CB4099CAE2D081ED59 /* ENStoreClient.h */,
+				AE7A5F0FB1BE11658EF838AA1822B343 /* ENStoreClient.m */,
+				1976751CF7CA9BBB80310C361848F315 /* ENTBinaryProtocol.h */,
+				B2851E9630D5B24B448628CA68ADED83 /* ENTBinaryProtocol.m */,
+				37828314F4ED9530A6D1700C86357B48 /* ENTException.h */,
+				DCC01C3A33FB4DD8B434D184B51CAFDC /* ENTException.m */,
+				7349165DB7F46A987CD8BB7BF0B07CB3 /* ENTheme.h */,
+				C51B3C7C68D98FED83B46DF48BB186C8 /* ENTheme.m */,
+				B75B9FB63A4530DC1BFFDBC9D5321F94 /* ENTHTTPClient.h */,
+				5984C5018D739E91E3DE91B4B0AEC205 /* ENTHTTPClient.m */,
+				AA96834F8D96EFB2FAA711C1F314C50E /* ENTProtocol.h */,
+				6EF360713A76B810AE6F8A5F97EE3C03 /* ENTProtocol.m */,
+				30608C8557173DDA493A27E58E945FF4 /* ENTTransport.h */,
+				3D9714BD2F273B327ECA239815425E3A /* ENTTransport.m */,
+				9F1E16473885988270B00A418109435A /* ENUserStoreClient.h */,
+				C374C4C04FFB34FE01F346746BC0AEB0 /* ENUserStoreClient.m */,
+				22A9507A9355D118DD6D23446BF32864 /* ENWebArchive.h */,
+				11366EA8003D555991A0DEA6E577ECD2 /* ENWebArchive.m */,
+				CE7863F89B34B932DFD517A11CFCBE26 /* ENWebClipNoteBuilder.h */,
+				EB4A322CE09BC9148CE5557A0B301634 /* ENWebClipNoteBuilder.m */,
+				ACFD354C04B33CF232285A0278F9FAE7 /* ENWebContentTransformer.h */,
+				74895CB50336EB05357B106C4FE14BAD /* ENWebContentTransformer.m */,
+				15F0739DE897E4691CAD81A679D0F124 /* ENWebResource.h */,
+				66B865D9295B927DEDCC7A9457B75A6A /* ENWebResource.m */,
+				98CBE7FA3144F13A1DB32F7BB969A0E1 /* ENXMLDTD.h */,
+				FD986940510B9B93814C856AAC013934 /* ENXMLDTD.m */,
+				746A7434C1B44855F307C23999C37D4C /* ENXMLSaxParser.h */,
+				7F086E584F7433EBFC28626628D3581E /* ENXMLSaxParser.m */,
+				1E1AB558C56ED8328EF042E7F725025B /* ENXMLUtils.h */,
+				4F02500D7F3A7E9163695DC739AC995D /* ENXMLWriter.h */,
+				0B42C36F9EA879DEF231FEBDECA2AA2A /* ENXMLWriter.m */,
+				6E87A87271C49A7D94C13FC7E98D85A4 /* FATField.h */,
+				0E9CFB9F0BBCAC488D1CCCA2559965D8 /* FATField.m */,
+				6E8377D751AD4E69DB349A69DCE933E6 /* FATObject.h */,
+				F1A921036A64EEF8FA3B77AFDB0817B8 /* FATObject.m */,
+				EF10BC3AD6D42BF771A907FEA838B5B5 /* KSForwardingWriter.h */,
+				9ACFA7EACFD38F3533560091C911B464 /* KSForwardingWriter.m */,
+				E5C090C3646C3382AF64B8137093B0AF /* KSHTMLWriter.h */,
+				ABA5ADAA83586F831910DF31060BE47A /* KSHTMLWriter.m */,
+				1AA6795F8BF2F841884E10AA5C19DB6E /* KSWriter.h */,
+				7ACB16F495DE7F8BE075266A04B53C1B /* KSWriter.m */,
+				9AF7335C121400E5397021D153D905FD /* KSXMLAttributes.h */,
+				1C42635A4C870751B7468355E3149F1F /* KSXMLAttributes.m */,
+				1655770DD9BDC926F7C8B1FBC0855126 /* KSXMLWriter.h */,
+				325BB9E05882D6C3078F807F0E741D73 /* KSXMLWriter.m */,
+				4C246E6B19C6EEAC662E328602216795 /* NSData+EvernoteSDK.h */,
+				515F6EC737B036CB41AD253D295424BD /* NSData+EvernoteSDK.m */,
+				6F60D75993169ADFD0C656AE27DCAEC2 /* NSDate+EDAMAdditions.h */,
+				EDF7898D9B80D1719C72ABB6E1215721 /* NSDate+EDAMAdditions.m */,
+				887221903CA8942E3CDFA51FFE9C1BEB /* NSRegularExpression+ENAGRegex.h */,
+				2225D05DBDDED63B82F4F66C67E4BA64 /* NSRegularExpression+ENAGRegex.m */,
+				357D131DF89A0D9C6E47A3249BD84E8A /* NSString+EDAMAdditions.m */,
+				7F06D6519AA441F556CB686382B701B1 /* NSString+EDAMNilAdditions.h */,
+				42F5DE1F80E6EF934D21F7B9277D9620 /* NSString+ENScrubbing.h */,
+				BBA38AE61ACD4D40F3AFF373C0BDD45C /* NSString+ENScrubbing.m */,
+				A13A89920D48F6F2F4EB959792B42A81 /* NSString+URLEncoding.h */,
+				72CB130579ED334D1BD7DC4F8190DE47 /* NSString+URLEncoding.m */,
+				FCBD42AB60AA5CD5BF6E62CEC2FAC691 /* NSString+XMLAdditions.h */,
+				293994104076341BCA25236556EC89C1 /* NSString+XMLAdditions.m */,
+				1E4862DF991BB81E5F9095294CD495A8 /* RMSTextField.h */,
+				76AA5199B782002A55896B5162CB95BB /* RMSTextField.m */,
+				E51B1787CEB725C51BF8BA4AE79C75D6 /* RMSTokenConstraintManager.h */,
+				173199DD1E8BD9B11AD70F733D3BF323 /* RMSTokenConstraintManager.m */,
+				AF4136B1FA2D79502ABE90BF349438BF /* RMSTokenView.h */,
+				A7418E185360A0C870713EC84AD5EC89 /* RMSTokenView.m */,
+				F870B0E04C9C61CA4EFC14AB2F40242F /* Resources */,
+				65878CFCC659918293A0B14C666E94C4 /* Support Files */,
+			);
+			name = "evernote-cloud-sdk-ios";
+			path = "evernote-cloud-sdk-ios";
+			sourceTree = "<group>";
+		};
+		4AE29DBAC8FED5F64927393B17B3BD5B /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				82A9849692BE7CF3BFC329B3888FA01D /* AFHTTPSessionManager.h */,
+				8C779039F35EE3A026D75A515D0C16B0 /* AFHTTPSessionManager.m */,
+				5E003C21BABCF1088F3A13FC29A6CA32 /* AFURLSessionManager.h */,
+				EC25FD8EEB3CA0461A4C566B2CBAA62B /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		56F3D831A91A5786E72E446FB5B9A934 /* NSDate+TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				81E40F8600F7C677326978EDACCC4779 /* NSDate+TimeAgo.h */,
+				8EF003493D66A869943D1FE765258D91 /* NSDate+TimeAgo.m */,
+				ED2CFF21FC09CD17650C34548F0BCB30 /* Resources */,
+				8210B2339117B0A4C302E3261C0AA8CC /* Support Files */,
+			);
+			name = "NSDate+TimeAgo";
+			path = "NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
+		65878CFCC659918293A0B14C666E94C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E19104F3F9EE0103626AEB61AD419 /* evernote-cloud-sdk-ios.xcconfig */,
+				7B4AB9374B1046A5905B13584E7B210E /* evernote-cloud-sdk-ios-dummy.m */,
+				3C1ADA1A5DDAADC94DC504622D6CF0E4 /* evernote-cloud-sdk-ios-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/evernote-cloud-sdk-ios";
+			sourceTree = "<group>";
+		};
+		7ACE9C39A837FCB1EEF36AB1355D0364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3380BA27F00E71C3ADC463AB3416028A /* libAFNetworking.a */,
+				6D09AE59E25D402243956F5C1031D8DC /* libevernote-cloud-sdk-ios.a */,
+				85DE70EF6F6C7D01E22880ED036C4D74 /* libNSDate+TimeAgo.a */,
+				3E862A11F54A7EA37C4409F0CFAFDECA /* libPods-HMemo.a */,
+				05B6124EFD33417E8C30EBED6E30CA14 /* libYYText.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				876F80F8AFD1240ED0B7B9EA9C5BFAD8 /* Frameworks */,
+				DF32EE5520E02DD59F8EE693A0C8C4EA /* Pods */,
+				7ACE9C39A837FCB1EEF36AB1355D0364 /* Products */,
+				1B78E6A48CEB6F3A42525854D321616B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8210B2339117B0A4C302E3261C0AA8CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E87EC5E69B4ACE8138D648366A89B891 /* NSDate+TimeAgo.xcconfig */,
+				E8E39D5DCF9FA638B8665C5D75AE1275 /* NSDate+TimeAgo-dummy.m */,
+				C6268EB6187FCCBAD1CE5FBE81D4583E /* NSDate+TimeAgo-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
+		876F80F8AFD1240ED0B7B9EA9C5BFAD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD538479AD07F7A3092C4938E3E4C6EE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98CE626E280FD1F6BBACD49CA3B5F4A2 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				DEB46A03C8CAF62766B3ED0761D49A24 /* AFURLRequestSerialization.h */,
+				625ED6456F53EEB8F27BBBFC97A70384 /* AFURLRequestSerialization.m */,
+				6C7E9752FD27E90A8A3C93450C372AEE /* AFURLResponseSerialization.h */,
+				3BDCFC84FB988D95E2B09DC37FD1F407 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		A0D5D50DD8A9C73D4413D006F03FA279 /* Pods-HMemo */ = {
+			isa = PBXGroup;
+			children = (
+				A00F58EC30C54D5F18E92B1708A24C5C /* Pods-HMemo-acknowledgements.markdown */,
+				15CA9EAF81CB5DA4DCF91662636691E3 /* Pods-HMemo-acknowledgements.plist */,
+				C647BBF3F39561B9868601DFF564A406 /* Pods-HMemo-dummy.m */,
+				8D23C0757C85627B4B350B80DBE6F595 /* Pods-HMemo-frameworks.sh */,
+				677C9186C83A76B01807508BF4ED94BB /* Pods-HMemo-resources.sh */,
+				12231E2D38A97D0096A3AE087B3BC502 /* Pods-HMemo.debug.xcconfig */,
+				6FF55BF08FFFAE6FEB1B351C25E65429 /* Pods-HMemo.release.xcconfig */,
+			);
+			name = "Pods-HMemo";
+			path = "Target Support Files/Pods-HMemo";
+			sourceTree = "<group>";
+		};
+		A1771DCD9912A34C0635DD6F92970934 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FF584C5CEAEEB05E52FFCC41C20F858 /* YYText.xcconfig */,
+				AEB3D59BED14560ECD409F23F7C57395 /* YYText-dummy.m */,
+				A474A450E99463E23BD2A1B2AF05A911 /* YYText-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYText";
+			sourceTree = "<group>";
+		};
+		A4E163FE4A2C6039EF75BFDAE78E577B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				014C448A12AE25E3C92A42B1785B9DB6 /* AFSecurityPolicy.h */,
+				9CEABA7E05300E330D5866DA695CFBB6 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		AEC4D07DF456E9D8B1CD483804B5956F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AEC134A1B1C7CA57981FF38C758E9BEE /* AFNetworking.h */,
+				4AE29DBAC8FED5F64927393B17B3BD5B /* NSURLSession */,
+				0B37975ED0F382AB8672C2AFC64941AB /* Reachability */,
+				A4E163FE4A2C6039EF75BFDAE78E577B /* Security */,
+				98CE626E280FD1F6BBACD49CA3B5F4A2 /* Serialization */,
+				F4AAB8FF165A1F78AE1E588753345C96 /* Support Files */,
+				B06E1D1DB9EE0251208695A670827BE3 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B06E1D1DB9EE0251208695A670827BE3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E4F162F09A7998CE7EF8AC95786373BA /* AFAutoPurgingImageCache.h */,
+				B735863B303D4EEE643941CD7CF87E1A /* AFAutoPurgingImageCache.m */,
+				FD09876713D30D1EC5F6B86218E3E353 /* AFImageDownloader.h */,
+				28404504C5D58C217468AD67AA32218A /* AFImageDownloader.m */,
+				1C165D552585D8595901F136127606A1 /* AFNetworkActivityIndicatorManager.h */,
+				79A96A4D791A133484E722855D6BA67B /* AFNetworkActivityIndicatorManager.m */,
+				2439B06113B6E98F64E5DA62B0BA32B7 /* UIActivityIndicatorView+AFNetworking.h */,
+				8D17A3D6AD9927C11435E0F4334321DA /* UIActivityIndicatorView+AFNetworking.m */,
+				F0543193C1AB1C8F82BA4BDA1CBAD88F /* UIButton+AFNetworking.h */,
+				761294FDE44BCF032675238532F76FDF /* UIButton+AFNetworking.m */,
+				D3C44D797F3C8F9B99697E15C2DE81D2 /* UIImage+AFNetworking.h */,
+				0E80D9D0CAF5A7CCC584D5358A2CFC42 /* UIImageView+AFNetworking.h */,
+				46442E6FAE3E2DEC871F1203597C2CBB /* UIImageView+AFNetworking.m */,
+				E259FD1F1A62B8FF58D6E5EDCC20C815 /* UIKit+AFNetworking.h */,
+				2FA5933B728B3ABBE2F29227635E7F16 /* UIProgressView+AFNetworking.h */,
+				81CB7225572D26D02F1F533064521915 /* UIProgressView+AFNetworking.m */,
+				955B35C9552ECBB68348E120F7CDA927 /* UIRefreshControl+AFNetworking.h */,
+				152EEBFBC84E20E947EF8CCBE6CB1C3A /* UIRefreshControl+AFNetworking.m */,
+				E6F47857694DA022B4EA59EB99E82097 /* UIWebView+AFNetworking.h */,
+				5A5ED125CBC74A97F8429120DA3B3942 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		B4B1AF2858658BFD289D9B451BA3AF3B /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				39E7820F202AFCD279617FEBBF152CB9 /* NSAttributedString+YYText.h */,
+				66C1DE278476143CA9E4F15920FF22A7 /* NSAttributedString+YYText.m */,
+				EB84105F3CFC7AD13ED991B7AD06EC79 /* NSParagraphStyle+YYText.h */,
+				754836CBCC9146568B9F37D8273B61B7 /* NSParagraphStyle+YYText.m */,
+				719DCC9FB8D417B2902432E5A04C72BB /* UIPasteboard+YYText.h */,
+				3826C7AE91540A342B0A78493508DBAA /* UIPasteboard+YYText.m */,
+				A795CDD87D6C9B0D78139772C27054FF /* UIView+YYText.h */,
+				69B8A6994534A2E2A5C5E6FEDEAE8D51 /* UIView+YYText.m */,
+				667B254ED8FF930F2A8CC8123CBBC9EE /* YYLabel.h */,
+				A947BEBBC6CA4AE4F2C23AE49C664521 /* YYLabel.m */,
+				D3A43882AAABC5957DAA5E21804BF2F5 /* YYText.h */,
+				C2FF9C743BC98B327A1E1406CB57C25C /* YYTextArchiver.h */,
+				4BEE797DE8161044D889F908F9703CFC /* YYTextArchiver.m */,
+				A62FA9721DD302C5849588B2FC86811E /* YYTextAsyncLayer.h */,
+				F9C244AAC714972C6AB70376392E242E /* YYTextAsyncLayer.m */,
+				2F16397485345F85B093E2958600D5DA /* YYTextAttribute.h */,
+				B63F6B603DC32EED93864D7E4FA8B1A2 /* YYTextAttribute.m */,
+				9DC30EE3E6BF9A806201E4B646838FB8 /* YYTextContainerView.h */,
+				7BC7057E237B4865CF18237E4BD466BB /* YYTextContainerView.m */,
+				5A71EBAF2F20AC5D2A6A40FF36F2CB59 /* YYTextDebugOption.h */,
+				DF23E1032A135515261A5C08912CDAC4 /* YYTextDebugOption.m */,
+				358F9CEE5F63BF19E3FD889F47ADA81A /* YYTextEffectWindow.h */,
+				1BE99D2D59E7FEB1D52CD47965934C73 /* YYTextEffectWindow.m */,
+				224AA99229C16FEEC60E8601B128FA4D /* YYTextInput.h */,
+				3839B8C3D2ABAF90EF467522C1910E54 /* YYTextInput.m */,
+				524B859013026215493F51B358E4E95D /* YYTextKeyboardManager.h */,
+				8F2CDFDA8E6514D1E8B91983FC8684AC /* YYTextKeyboardManager.m */,
+				9F5AEDF177B980E1FC03BF4342E6149D /* YYTextLayout.h */,
+				91A45B50B280B6220262B6ED6A620F20 /* YYTextLayout.m */,
+				E296DC253D6F44F3E9C8EB9909CA3891 /* YYTextLine.h */,
+				261340740ECD08DF690972CE15E06E75 /* YYTextLine.m */,
+				6222DB65A544422608628BCE86EAAF1A /* YYTextMagnifier.h */,
+				1C350E4D04DD6933A852FD2F2D4FD6F3 /* YYTextMagnifier.m */,
+				48C3D5D1F27E3E86CECAEE736B6D92CE /* YYTextParser.h */,
+				DAE8664BD7BA4AE9AD2F17F16919E531 /* YYTextParser.m */,
+				E9479642E2D1A028561626B7D604151C /* YYTextRubyAnnotation.h */,
+				58C1BA9BC26FEB0883D54401A18A02C4 /* YYTextRubyAnnotation.m */,
+				42528C4E881574EB64D1B3775BB2F570 /* YYTextRunDelegate.h */,
+				D628E7A1E3A284EA3E03752C067B4D38 /* YYTextRunDelegate.m */,
+				4117ACBFFA7C68BFD733B615C8B24AED /* YYTextSelectionView.h */,
+				69CD271F96AAFE371333543A8DDE6FD2 /* YYTextSelectionView.m */,
+				FC9A84DC643EB09F41B5A3052BB33E8E /* YYTextTransaction.h */,
+				D4172433A391CAE20B5D998C2128F6C8 /* YYTextTransaction.m */,
+				A22D1EE69644789689B81294D3FDD51C /* YYTextUtilities.h */,
+				4A4B80169DF290D885320FE37F0095C9 /* YYTextUtilities.m */,
+				071DE8FE942FA2FA8CFAE4B630D28B41 /* YYTextView.h */,
+				BA9077F9A7127650B211F36D0DE44DDA /* YYTextView.m */,
+				10425FE92E13438BE4BA32C953A84112 /* YYTextWeakProxy.h */,
+				6B1677E9D2E0F9A3ED47FA6B5FBAE83F /* YYTextWeakProxy.m */,
+				A1771DCD9912A34C0635DD6F92970934 /* Support Files */,
+			);
+			name = YYText;
+			path = YYText;
+			sourceTree = "<group>";
+		};
+		DF32EE5520E02DD59F8EE693A0C8C4EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D07DF456E9D8B1CD483804B5956F /* AFNetworking */,
+				2F32C4F245407E0D6BBDE372B9E7B109 /* evernote-cloud-sdk-ios */,
+				56F3D831A91A5786E72E446FB5B9A934 /* NSDate+TimeAgo */,
+				B4B1AF2858658BFD289D9B451BA3AF3B /* YYText */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED2CFF21FC09CD17650C34548F0BCB30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D3AE8A168F72508B396938A05628DEE /* NSDateTimeAgo.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F4AAB8FF165A1F78AE1E588753345C96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC2870E2BC059E9BEA9A8A900F1BE6 /* AFNetworking.xcconfig */,
+				BE311334268325E838CC4F3D4550B457 /* AFNetworking-dummy.m */,
+				9109432FE702F478C988B8250142F76F /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		F870B0E04C9C61CA4EFC14AB2F40242F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D23EE019F47F2E5BFFEC4D9F7BDC693 /* ENSDKResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FD538479AD07F7A3092C4938E3E4C6EE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E047EA0B194C7C82C12FED89F77A3EE6 /* Accelerate.framework */,
+				67358516EB0E5B26D42A80C5A7A10ADC /* CoreFoundation.framework */,
+				32A7262E4351B9C4CF61BC32D9EAFBDB /* CoreGraphics.framework */,
+				972D44B1D07E89EF229F4B0CA594D315 /* CoreText.framework */,
+				C3F596E227B9A347D97121BE9CC7B8B9 /* Foundation.framework */,
+				20E876B23FD46F9C76DBEE4D344E5F1B /* MobileCoreServices.framework */,
+				4F71B400465AF4D647D0C5841E881660 /* QuartzCore.framework */,
+				E04FC35F5D395535C35749993BD62A96 /* Security.framework */,
+				96C51168F0CDAF4D530D596A5C45FAB6 /* SystemConfiguration.framework */,
+				C068B9E49CA40D551EABC8A4DDA31DC4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A1C2B07813030B0D51EB1D804A4439E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */,
+				6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */,
+				707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */,
+				E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */,
+				46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */,
+				DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */,
+				D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */,
+				C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */,
+				66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */,
+				F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */,
+				682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */,
+				1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */,
+				D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */,
+				5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */,
+				B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */,
+				F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */,
+				8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228B15210381A8C3832612BF0CA9E9EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92A9567CFF0EF4E3D1CC85390621F89 /* NSDate+TimeAgo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5570CC6F960C17FF99B5F93E9DE0585 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7109D167D8DD94E53CCA42CFADFBB0AD /* EDAM.h in Headers */,
+				EFA3975763ED4D7902C87AC21C36C703 /* EDAMErrors.h in Headers */,
+				3DB81AE59447472A4123B5A9DA7EDC50 /* EDAMLimits.h in Headers */,
+				508E1D44D5BDBC6FFF134EB3EF8ED677 /* EDAMNoteStore.h in Headers */,
+				19229EA3F1D00F9AF657BF6F44EDCD82 /* EDAMNoteStoreClient+Utilities.h in Headers */,
+				CB48D0B7C41F6CB5169BE3750E1A4263 /* EDAMTypes.h in Headers */,
+				9A9159DF396841A71856E5B6AD1AE5AC /* EDAMUserStore.h in Headers */,
+				8B301F2D61E00C80217CF55D5724C5D4 /* ENAFURLConnectionOperation.h in Headers */,
+				6F5DE4C7F81560C9DB74B736DD8D9E91 /* ENAuthCache.h in Headers */,
+				8F236E055C38B55802C72CF7AC9B845D /* ENBusinessNoteStoreClient.h in Headers */,
+				1119FC8558C636D723A84CBCF09B225F /* ENCommonUtils.h in Headers */,
+				CBE7E71519904B42CBC09D5E94EB3CD6 /* ENCredentials.h in Headers */,
+				27964EE9F1A811F981F66E2443C921D8 /* ENCredentialStore.h in Headers */,
+				6462F79C6845B62EFDFF580E77BE4682 /* ENEncryptedContentInfo.h in Headers */,
+				79656E61FCE3EBAFA850E1EA14B674CF /* ENError.h in Headers */,
+				8EA8F03723B9B26EADEDD92A3FA6AB91 /* ENGCOAuth.h in Headers */,
+				410060CF5079FFA8C4D55C3E0D3BA9FF /* ENHTMLNoteContent.h in Headers */,
+				E291096775B90E4AF1DBEC3DA5F69A47 /* ENHTMLtoENMLConverter.h in Headers */,
+				48D60E0D8DDDFD7C6B114CE318A84CC8 /* ENLinkedNotebookRef.h in Headers */,
+				89CC383DB2A0588AE3708FC01DB4D9BA /* ENLinkedNoteStoreClient.h in Headers */,
+				7CBED81965BFFCB2EE242A9A294BB2BA /* ENLoadingViewController.h in Headers */,
+				2303AADB60D6749D0E127946D68DB219 /* ENMIMEUtils.h in Headers */,
+				2FB795EEB9DC6CE024BE3175A114DAB0 /* ENMLConstants.h in Headers */,
+				182F06A6713B26E30E02EAC6D959C6FD /* ENMLUtility.h in Headers */,
+				87D8D6F24292307EEDE49572099604FD /* ENMLWriter.h in Headers */,
+				087064A0EDBE31D9B3C0246B1FAFAEC3 /* ENNote.h in Headers */,
+				F4417D645C6A4A07C4DC4B763C4D6DE7 /* ENNotebook.h in Headers */,
+				8F50B32A319A1B8A5CFC3399BE9E18F0 /* ENNotebookCell.h in Headers */,
+				A2C907572B7621D3BFC621D841B77C17 /* ENNotebookChooserViewController.h in Headers */,
+				86306722CCCF6164B16535AB3B187B65 /* ENNotebookPickerButton.h in Headers */,
+				6DF66B4A9E7E9B482363324EC9A18EFD /* ENNotebookPickerView.h in Headers */,
+				5542362C650E4DC8E5A1D71CD89B7D04 /* ENNotebookTypeView.h in Headers */,
+				BA1CAC5C2D3F0737C99D4A902BBF39C9 /* ENNoteContent.h in Headers */,
+				357335BEF3694A08756F7D18A1E8F9FD /* ENNoteRef.h in Headers */,
+				DD158704AF0C3981017EEF328A557EDD /* ENNoteRefInternal.h in Headers */,
+				36E08A785C5FDA0E0F1CFAA26336C5CD /* ENNoteSearch.h in Headers */,
+				CDD7A6F857EBD93379FE2D18CD92C1A5 /* ENNoteStoreClient.h in Headers */,
+				B43F8B699C6B204EEDE26F506659F9BE /* ENOAuthAuthenticator.h in Headers */,
+				9B5EB6CA4673377C7C9C6CA3C2E1CAFC /* ENOAuthViewController.h in Headers */,
+				93DC776A4CD22AD4D6F91DC9A7DF3D12 /* ENPlainNoteContent.h in Headers */,
+				B1E3BB0F9B97F894E7883DEF5B1198AF /* ENPreferencesStore.h in Headers */,
+				85229BE2A9464660429DC05EC21524FE /* ENResource.h in Headers */,
+				572678534F3E3E87B63571E7254A7F58 /* ENSaveToEvernoteActivity.h in Headers */,
+				B17881484B969F36DE933C0B862CBC83 /* ENSaveToEvernoteViewController.h in Headers */,
+				89BD868CAE4122A6D1C95379A95592EF /* ENSDK.h in Headers */,
+				C0C9A40C3016B0A2F18430525D355B3D /* ENSDKAdvanced.h in Headers */,
+				552DA2143CAD00F3E3763D7DC23EDB83 /* ENSDKLogging.h in Headers */,
+				FEF09BA119113AF19DB3CF40478BCA83 /* ENSDKPrivate.h in Headers */,
+				0F6647C1773BC63ADDBE0636744B635E /* ENSDKResourceLoader.h in Headers */,
+				74BD0CFA13BF71CBD064AB6CD7FE1D37 /* ENSession.h in Headers */,
+				993CC5F5266CBFBF8E426BBDFA9D98EC /* ENShareURLHelper.h in Headers */,
+				51DF643DCD13083BC8D7BFC8EC8EB9A3 /* ENSSKeychain.h in Headers */,
+				64A93BF4DDDC5E905A43AF4BA6453203 /* ENSSKeychainQuery.h in Headers */,
+				668947C69B7885184EDD8B11B4112D68 /* ENStoreClient.h in Headers */,
+				B3778EA721D4FE680DE93032D48B276B /* ENTBinaryProtocol.h in Headers */,
+				CD80BE6E74D82C766583D4ACB20FC30C /* ENTException.h in Headers */,
+				8A6238432CCB62CFAE00558D2CEBD0A5 /* ENTheme.h in Headers */,
+				4EB58F1F4EE53C0B0D1883B339AF97EE /* ENTHTTPClient.h in Headers */,
+				4ED94DDA78BDDFD5D195BE3165447F8C /* ENTProtocol.h in Headers */,
+				C92AC61A494853D513642D168A7C9545 /* ENTTransport.h in Headers */,
+				2EAE035FAAD5044704915582DDA47D86 /* ENUserStoreClient.h in Headers */,
+				553D83697EEA35FB479150E98DC467DA /* ENWebArchive.h in Headers */,
+				B45001EDFF5FBDECC42D4323E821F2FC /* ENWebClipNoteBuilder.h in Headers */,
+				7C30E0C085021C00AFA8C6AE19F1DCC1 /* ENWebContentTransformer.h in Headers */,
+				77E323E368DDA20BE3536A9DFA04C6BA /* ENWebResource.h in Headers */,
+				4ED24FE3193768A299F1A05E7A2F72CB /* ENXMLDTD.h in Headers */,
+				6238784E8C8A2B1B2A8E812E9D63320C /* ENXMLSaxParser.h in Headers */,
+				46AC755DBA602C91C2442ED0C9FDF2D4 /* ENXMLUtils.h in Headers */,
+				2F3B9C15FF99F8C2467BFA2E424314AF /* ENXMLWriter.h in Headers */,
+				9F183E670EDA5D7FEF0EA8351E153A04 /* FATField.h in Headers */,
+				8ECDDB4EC19E5087B9C3825EF2274DB2 /* FATObject.h in Headers */,
+				2EF10A1E3F377B99100E42BE72391D04 /* KSForwardingWriter.h in Headers */,
+				6900657E4B814468B9CCC7E06F8B4004 /* KSHTMLWriter.h in Headers */,
+				0C4B4AB798423876615F37ACD2FE337F /* KSWriter.h in Headers */,
+				15EE9A4B91EB48A260D349F66EEA3357 /* KSXMLAttributes.h in Headers */,
+				CCC6312FA541A8A4C8764B50FB603D19 /* KSXMLWriter.h in Headers */,
+				0111B838A6E3984290652B4CD87986B6 /* NSData+EvernoteSDK.h in Headers */,
+				FA0F2F6FE4FC07D5C0683FC78AC3E7C2 /* NSDate+EDAMAdditions.h in Headers */,
+				B3E66E4938FF5EB992A28113E3E6856C /* NSRegularExpression+ENAGRegex.h in Headers */,
+				3AEA7B6B6BCA3C13DEFFE03B06728420 /* NSString+EDAMNilAdditions.h in Headers */,
+				A0B69472964BA31B069D158FC9710122 /* NSString+ENScrubbing.h in Headers */,
+				201312914DBFB9411468236BAD5788BD /* NSString+URLEncoding.h in Headers */,
+				4C9130DC8678D42BF3266AD3AAD6953B /* NSString+XMLAdditions.h in Headers */,
+				8C9AEAAF500CDEA6E6030FA8B78309D2 /* RMSTextField.h in Headers */,
+				4DF31EA8AE01F33F41070F8BDC394D71 /* RMSTokenConstraintManager.h in Headers */,
+				39172E2FCBB55EDB1443E24B827FA915 /* RMSTokenView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB2C3ED9DD7E020C260184A6B1762BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE1FD40B1F666C1D0DC54D09C37FF0 /* NSAttributedString+YYText.h in Headers */,
+				F1401252417D3C424F7C86A69B917083 /* NSParagraphStyle+YYText.h in Headers */,
+				45870C129975CE5DD78C2E2C04B2E198 /* UIPasteboard+YYText.h in Headers */,
+				E9EC1C5534774B6B3913DA73ADB5082F /* UIView+YYText.h in Headers */,
+				FFC86A257D9AA24A0BD3B1312DE7C160 /* YYLabel.h in Headers */,
+				842727DF0A00092CF0DC4166E99913CD /* YYText.h in Headers */,
+				2E498E6414B4A24907838973CA972203 /* YYTextArchiver.h in Headers */,
+				BABB29221565CA1F3FBFE485145A7F42 /* YYTextAsyncLayer.h in Headers */,
+				7E0262AB8F9D229105F8F2B2BFC23CF0 /* YYTextAttribute.h in Headers */,
+				89E7F2E238BE81231F0EEA81459AD397 /* YYTextContainerView.h in Headers */,
+				6D474CD2EABDB7B2913B13AB96DF0A6C /* YYTextDebugOption.h in Headers */,
+				E99133841928A5485BFF124CFE44F3A8 /* YYTextEffectWindow.h in Headers */,
+				D4EF1A559A4048CAF6D232CB5467735C /* YYTextInput.h in Headers */,
+				9233661B657BF5CD8B1BA667F78F7D68 /* YYTextKeyboardManager.h in Headers */,
+				E0FBE474FCDA51E9DF92EFCC8ED830D2 /* YYTextLayout.h in Headers */,
+				8392BA798779269A8BF4CD3D6106366F /* YYTextLine.h in Headers */,
+				2176449D15E7B55229E435D8AC839837 /* YYTextMagnifier.h in Headers */,
+				A5A7865F196E8F59EFDF55B7D97992FD /* YYTextParser.h in Headers */,
+				54B14027FC75DA94E5439F7C0D731488 /* YYTextRubyAnnotation.h in Headers */,
+				D952B55436EB9547720506BA776DD508 /* YYTextRunDelegate.h in Headers */,
+				138AB0D0448CDDA54841D5C807092AE3 /* YYTextSelectionView.h in Headers */,
+				93C4C37F33133CE7C54D4A0E0724DCF4 /* YYTextTransaction.h in Headers */,
+				6926C296F132F0D165D24C759734F890 /* YYTextUtilities.h in Headers */,
+				E63A4D779B70133B6D99EE4E17E182F1 /* YYTextView.h in Headers */,
+				C964FB80F51110C960C8E3909F9F9B07 /* YYTextWeakProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		193BE2192A361377856411A18E32C90E /* YYText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4261CD9A0499D5DC23774579A92A0FBB /* Build configuration list for PBXNativeTarget "YYText" */;
+			buildPhases = (
+				E351AD704400E64EA80BF0F4F6992911 /* Sources */,
+				58002ED35077197D0F8D24E7ED93441D /* Frameworks */,
+				FCB2C3ED9DD7E020C260184A6B1762BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYText;
+			productName = YYText;
+			productReference = 05B6124EFD33417E8C30EBED6E30CA14 /* libYYText.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		34570380B54CF07B477E17BD491D3D17 /* NSDate+TimeAgo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9712B150713685F741AB1DD34D8077 /* Build configuration list for PBXNativeTarget "NSDate+TimeAgo" */;
+			buildPhases = (
+				BACB0CE9D8BD1FCCC4FB5B14DFAC09D3 /* Sources */,
+				5CC0ECBDD87C17959C59C70AE622928B /* Frameworks */,
+				228B15210381A8C3832612BF0CA9E9EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSDate+TimeAgo";
+			productName = "NSDate+TimeAgo";
+			productReference = 85DE70EF6F6C7D01E22880ED036C4D74 /* libNSDate+TimeAgo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A8585C9F37329302891BC5C60A9A759 /* Pods-HMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D15DBFDF54E01C6553B6AAF08F544D /* Build configuration list for PBXNativeTarget "Pods-HMemo" */;
+			buildPhases = (
+				9AB69F53E161361F5DEF6509E673A827 /* Sources */,
+				35536BF1E9C0A931A92E17EF3761BF61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BC77C2DF41DAEDE9984CD9A584F914B /* PBXTargetDependency */,
+				50A4F9D1381260818647E292668F24C5 /* PBXTargetDependency */,
+				D39E5837C71FE053CB5AE615575E1E0F /* PBXTargetDependency */,
+				6B4DBD57EE350D8649B77760E625217B /* PBXTargetDependency */,
+			);
+			name = "Pods-HMemo";
+			productName = "Pods-HMemo";
+			productReference = 3E862A11F54A7EA37C4409F0CFAFDECA /* libPods-HMemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				0068413C89BADAAF4691AA78AFE62C3E /* Sources */,
+				F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */,
+				0A1C2B07813030B0D51EB1D804A4439E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 3380BA27F00E71C3ADC463AB3416028A /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F39A3A5161A38E09903B9E94C0A78A33 /* evernote-cloud-sdk-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ADDC3E16EE7A7ED169DF2DADB947D85 /* Build configuration list for PBXNativeTarget "evernote-cloud-sdk-ios" */;
+			buildPhases = (
+				AABFD3E15CD4E12B2E22E58ACF5ABC95 /* Sources */,
+				655EE37074515BB8C12B40C4F3B85870 /* Frameworks */,
+				D5570CC6F960C17FF99B5F93E9DE0585 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "evernote-cloud-sdk-ios";
+			productName = "evernote-cloud-sdk-ios";
+			productReference = 6D09AE59E25D402243956F5C1031D8DC /* libevernote-cloud-sdk-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7ACE9C39A837FCB1EEF36AB1355D0364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E033EDB5EC0819481B0546434FA577B /* AFNetworking */,
+				F39A3A5161A38E09903B9E94C0A78A33 /* evernote-cloud-sdk-ios */,
+				34570380B54CF07B477E17BD491D3D17 /* NSDate+TimeAgo */,
+				9A8585C9F37329302891BC5C60A9A759 /* Pods-HMemo */,
+				193BE2192A361377856411A18E32C90E /* YYText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0068413C89BADAAF4691AA78AFE62C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */,
+				73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */,
+				5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */,
+				31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */,
+				E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */,
+				66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */,
+				5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */,
+				85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */,
+				9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */,
+				2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */,
+				A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */,
+				D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */,
+				B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */,
+				A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB69F53E161361F5DEF6509E673A827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E8BCCA5E3677F4378030F3517DF139 /* Pods-HMemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABFD3E15CD4E12B2E22E58ACF5ABC95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC61DCE7ACEA0A61300C6F782D361D5 /* EDAMErrors.m in Sources */,
+				D8E5BA8368490BAEE8E29D4A0ACB802F /* EDAMLimits.m in Sources */,
+				7B783E684202A94A4227BAF99215A9E5 /* EDAMNoteStore.m in Sources */,
+				90F5C675B29555F4D7290F139B39FDD0 /* EDAMNoteStoreClient+Utilities.m in Sources */,
+				5512E38161CE31EA54D9C720565083DA /* EDAMTypes.m in Sources */,
+				B27F5A6B90ABA9F7E3B38284BE33D669 /* EDAMUserStore.m in Sources */,
+				A29BCA6942DAD190B8CB951E60FB73EB /* ENAFURLConnectionOperation.m in Sources */,
+				8322A0B3F141329B80CA99701973011C /* ENAuthCache.m in Sources */,
+				5412788EBF1F7E569B73797B7F5294C3 /* ENBusinessNoteStoreClient.m in Sources */,
+				135B0E651C81F4DBA908609FC9DFA6CF /* ENCommonUtils.m in Sources */,
+				4A43227E0D30CFC2CB4597967DD7E3A0 /* ENCredentials.m in Sources */,
+				19C33FF5EFFF79A2AC2C42AE6E0FBE06 /* ENCredentialStore.m in Sources */,
+				AA65894C8971C6AE492ACFAD741BA7F1 /* ENEncryptedContentInfo.m in Sources */,
+				6CA71E3A9199F4FA3CC9EF25855CAA81 /* ENError.m in Sources */,
+				BAD1FCC4B71BD80A414490BE42AF033D /* ENGCOAuth.m in Sources */,
+				CB79FE09C2E7F63F4AE95D0185EE759A /* ENHTMLNoteContent.m in Sources */,
+				42E626D71372BB9A5284BAED8584E509 /* ENHTMLtoENMLConverter.m in Sources */,
+				31405B1B1BDB7F11E47E8826428C3270 /* ENLinkedNotebookRef.m in Sources */,
+				076FA857A78559B34141A0EC5A380191 /* ENLinkedNoteStoreClient.m in Sources */,
+				D8251787DB7D85AFB48B2501A002FC47 /* ENLoadingViewController.m in Sources */,
+				E78D7E14F86F85F34A4C8061D593DA8D /* ENMIMEUtils.m in Sources */,
+				4212D51BE08E9E54A23E4EE2893253B9 /* ENMLConstants.m in Sources */,
+				6C353FBF407329E923B07D092520262D /* ENMLUtility.m in Sources */,
+				296F4CEC21CD3776AD5CACB184D07756 /* ENMLWriter.m in Sources */,
+				AD1C9DC56FA3D828786603109A74B625 /* ENNote.m in Sources */,
+				5EF0305521319D9A7C3DF07B5ADC221C /* ENNotebook.m in Sources */,
+				8E11745907ACEC06FBD0E29E39175430 /* ENNotebookCell.m in Sources */,
+				2B3786C0C4F52969D87994CC5E620DF5 /* ENNotebookChooserViewController.m in Sources */,
+				3C915CE605CED83E63AE59925CD64343 /* ENNotebookPickerButton.m in Sources */,
+				286CEF5568FBFDD86809F3E55EB3ED1E /* ENNotebookPickerView.m in Sources */,
+				DA001E15CEC04844DC40B5EA0AF83E75 /* ENNotebookTypeView.m in Sources */,
+				39577B3E975FB58A75E78E60FC2AD8D3 /* ENNoteContent.m in Sources */,
+				B91E943E69272EB1F86AC980CC7D28C8 /* ENNoteRef.m in Sources */,
+				DBF829C935A53BB88F2C74C3D9DCF692 /* ENNoteSearch.m in Sources */,
+				06B6CB52783BB9F605F3F907DB3D3D6E /* ENNoteStoreClient.m in Sources */,
+				C0945BF4F5D0BD4F67A0E457EBE62855 /* ENOAuthAuthenticator.m in Sources */,
+				2762A91DCA60D8DF9031851F7080A6A1 /* ENOAuthViewController.m in Sources */,
+				F0463B16F81A7991F691FB9F3B68F0E0 /* ENPlainNoteContent.m in Sources */,
+				364DA39F79A88955F42D79E4D39AE35B /* ENPreferencesStore.m in Sources */,
+				4BC5AC0711D0DA487FA999F3EA6C8F9F /* ENResource.m in Sources */,
+				52EB15585D89CD46550C8BB0656E80B6 /* ENSaveToEvernoteActivity.m in Sources */,
+				DEC6A2B825A3D28A326C566087A49B92 /* ENSaveToEvernoteViewController.m in Sources */,
+				32A73BDEC78B7DB85FD65E4B7024BF62 /* ENSDKPrivate.m in Sources */,
+				B59C5E982474495BC7EB651D37E67B93 /* ENSDKResourceLoader.m in Sources */,
+				673932BEAB46DD581E3D535B0BBF4B0D /* ENSession.m in Sources */,
+				19566E45E20FB1A8266FD306174F9B0C /* ENShareURLHelper.m in Sources */,
+				99DC876F3B10364E985C60F3F0032776 /* ENSSKeychain.m in Sources */,
+				8989B711A5D87356123CF0EB36769D3B /* ENSSKeychainQuery.m in Sources */,
+				5A8C09A22ADCF8868C263AE0DD0BB5AD /* ENStoreClient.m in Sources */,
+				1250C4E04CD5D3FBCC1F855F41864931 /* ENTBinaryProtocol.m in Sources */,
+				07F1902CEAB1084D0D6FC9379287541A /* ENTException.m in Sources */,
+				0674903C19807D6DBA15BE6B3CE1FD4F /* ENTheme.m in Sources */,
+				75A212CA681F49B992378D99FE549F9A /* ENTHTTPClient.m in Sources */,
+				25D9D31672D9E7FC93B4C63D991C3F56 /* ENTProtocol.m in Sources */,
+				E815B00BF197F4BF2DEED43931746492 /* ENTTransport.m in Sources */,
+				0533684CAF37978623FF660747BA9E1E /* ENUserStoreClient.m in Sources */,
+				59E68AA05D2EA09AB0D2E0B686564BA6 /* ENWebArchive.m in Sources */,
+				B5C7750821697ECBCA258A7BA54FE110 /* ENWebClipNoteBuilder.m in Sources */,
+				C8572D26CC2BE51318329902C7705240 /* ENWebContentTransformer.m in Sources */,
+				6704F3240CE2FF3FA38419ABF45DF5CB /* ENWebResource.m in Sources */,
+				BCFA40FB1F1AD4260C016E63F0C7D858 /* ENXMLDTD.m in Sources */,
+				B7B3B9750D817EFCD58FE809E7FE02EE /* ENXMLSaxParser.m in Sources */,
+				68A0B2C65AE1F05AEFFF150DFEA1F313 /* ENXMLWriter.m in Sources */,
+				0CF492F8CAA55B2E541707D17720E83B /* evernote-cloud-sdk-ios-dummy.m in Sources */,
+				359BFC6C86A0065B9A35F442E0ADA7D7 /* FATField.m in Sources */,
+				980F6F2AD8F3816FF3966B5DDAEC0460 /* FATObject.m in Sources */,
+				91B66AA3194E6011C66AC274FBACB7E0 /* KSForwardingWriter.m in Sources */,
+				90BAA919224B59A619D47148A106D228 /* KSHTMLWriter.m in Sources */,
+				40B8C2C7DB38CFD17F8B8457DF4CC9D1 /* KSWriter.m in Sources */,
+				5D3AB69423A9C940C7CC562634C82310 /* KSXMLAttributes.m in Sources */,
+				65279D89B32840FDB8C77E15223916FC /* KSXMLWriter.m in Sources */,
+				AC33A79C92572AB189F634C5DA5D11F0 /* NSData+EvernoteSDK.m in Sources */,
+				D6628D3D79C97B5E701B5961DE9C4C5E /* NSDate+EDAMAdditions.m in Sources */,
+				C405900BDFAD773934B9194D2D920D10 /* NSRegularExpression+ENAGRegex.m in Sources */,
+				0F36F89DF6382C2C44F696FBB1DF59CE /* NSString+EDAMAdditions.m in Sources */,
+				23C1184DD00ECEC38059711C12ACF7D3 /* NSString+ENScrubbing.m in Sources */,
+				1B3C14933837EC177DD434C754621279 /* NSString+URLEncoding.m in Sources */,
+				E5936D40209C8B4B9184067C123003C7 /* NSString+XMLAdditions.m in Sources */,
+				CBA097D5997288FCB017B4BEEE1752A2 /* RMSTextField.m in Sources */,
+				91E6DDB2FFE5227EF1D72C568237464E /* RMSTokenConstraintManager.m in Sources */,
+				0872799F8F97DECC46DE3FFFBC1DFC2D /* RMSTokenView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACB0CE9D8BD1FCCC4FB5B14DFAC09D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2462309810550C7BC8A9470E47BAA2 /* NSDate+TimeAgo-dummy.m in Sources */,
+				18C5B28AABF523D2AA92FE55C73594F6 /* NSDate+TimeAgo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E351AD704400E64EA80BF0F4F6992911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09C60116E8CA52EB62EA1CBE37CE469 /* NSAttributedString+YYText.m in Sources */,
+				FC3B971718F611E15885E5028FC3D88B /* NSParagraphStyle+YYText.m in Sources */,
+				29119F93E4B9B1CF09193560602AC9AB /* UIPasteboard+YYText.m in Sources */,
+				874E915FFEDE5E015053D3103DC2E943 /* UIView+YYText.m in Sources */,
+				40E956C17B4FCD4AFC86B538BC4292DA /* YYLabel.m in Sources */,
+				71CC8A6A3FDBCAC66B9B466C8610FFA2 /* YYText-dummy.m in Sources */,
+				B6F9D230F731D08A2CB4C16E49161A48 /* YYTextArchiver.m in Sources */,
+				2E834AF19D06126373B5DAFC603A06D4 /* YYTextAsyncLayer.m in Sources */,
+				7F0FD593048CE037E010320FB5E24401 /* YYTextAttribute.m in Sources */,
+				F02056CB4D9AEB8CB34A8A1028DE881D /* YYTextContainerView.m in Sources */,
+				875E34EE1549DA25CCFDED0BC72EF689 /* YYTextDebugOption.m in Sources */,
+				CB13B73380E3B8629847FEF4CF0A02BB /* YYTextEffectWindow.m in Sources */,
+				5B8C7050BA1E8A7DE57BEE886FE7E302 /* YYTextInput.m in Sources */,
+				27FC0A4860F8A1F36746A96C6472EE72 /* YYTextKeyboardManager.m in Sources */,
+				B1B892E2237C22A32B14A5D1FAA624B1 /* YYTextLayout.m in Sources */,
+				C1336A5063AFC3CA46255ACD2FEAEE59 /* YYTextLine.m in Sources */,
+				CA64AEE3B8E911193B97FF50ADF8DF36 /* YYTextMagnifier.m in Sources */,
+				BF99AECFB06049D1AF9A490769B4DB22 /* YYTextParser.m in Sources */,
+				E1A09FE3490E35775579F19F08D3731D /* YYTextRubyAnnotation.m in Sources */,
+				6AFFA1B9DA42A0BC35A3BA420294FF41 /* YYTextRunDelegate.m in Sources */,
+				B18B2039450F4F46A7ED8C5C1F2C7762 /* YYTextSelectionView.m in Sources */,
+				23DC2DA47B7AFBEB7E6542F468A4F2F2 /* YYTextTransaction.m in Sources */,
+				2097CEE6DB2B44A13D9F1200ED99E0FF /* YYTextUtilities.m in Sources */,
+				5D47C76D2006B9D2913F54D90C429F77 /* YYTextView.m in Sources */,
+				6A5A56320CC6223DE6E92D35E79BB984 /* YYTextWeakProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BC77C2DF41DAEDE9984CD9A584F914B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = BB819D6FF09939927BFE889E6EEE2A20 /* PBXContainerItemProxy */;
+		};
+		50A4F9D1381260818647E292668F24C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSDate+TimeAgo";
+			target = 34570380B54CF07B477E17BD491D3D17 /* NSDate+TimeAgo */;
+			targetProxy = 54A98EE488A1A8E00911DD338EC8FE7F /* PBXContainerItemProxy */;
+		};
+		6B4DBD57EE350D8649B77760E625217B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "evernote-cloud-sdk-ios";
+			target = F39A3A5161A38E09903B9E94C0A78A33 /* evernote-cloud-sdk-ios */;
+			targetProxy = 1C2AFA1ACE3E8547F09CE1490A7A1BFF /* PBXContainerItemProxy */;
+		};
+		D39E5837C71FE053CB5AE615575E1E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYText;
+			target = 193BE2192A361377856411A18E32C90E /* YYText */;
+			targetProxy = 8C73555936158253046F713978D35878 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		113C704D0B5FFDF5AC492D55EFE50F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF584C5CEAEEB05E52FFCC41C20F858 /* YYText.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYText/YYText-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		29F9F3DCEF99490F5A01D66F7C991455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87EC5E69B4ACE8138D648366A89B891 /* NSDate+TimeAgo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSDate+TimeAgo/NSDate+TimeAgo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		39C8691E18EC174E2768794E8F344F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87EC5E69B4ACE8138D648366A89B891 /* NSDate+TimeAgo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSDate+TimeAgo/NSDate+TimeAgo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72D1B831316303C2E356BBAC53FEF78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CC2870E2BC059E9BEA9A8A900F1BE6 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A93B000CE9271EE18ADF9BC802C212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12231E2D38A97D0096A3AE087B3BC502 /* Pods-HMemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1379E97FC526777949EA1F5573FC61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF584C5CEAEEB05E52FFCC41C20F858 /* YYText.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYText/YYText-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF190561B51DC3FE29CDB6FEEE5EC256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF55BF08FFFAE6FEB1B351C25E65429 /* Pods-HMemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D16BB8E9BD52D9C515960F29A2636997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E19104F3F9EE0103626AEB61AD419 /* evernote-cloud-sdk-ios.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/evernote-cloud-sdk-ios/evernote-cloud-sdk-ios-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDDB41ECE5D11BDD226F3DCDC8F36FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E19104F3F9EE0103626AEB61AD419 /* evernote-cloud-sdk-ios.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/evernote-cloud-sdk-ios/evernote-cloud-sdk-ios-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FF778088B62C05BE1205DAE628D151DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CC2870E2BC059E9BEA9A8A900F1BE6 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ADDC3E16EE7A7ED169DF2DADB947D85 /* Build configuration list for PBXNativeTarget "evernote-cloud-sdk-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16BB8E9BD52D9C515960F29A2636997 /* Debug */,
+				FDDB41ECE5D11BDD226F3DCDC8F36FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4261CD9A0499D5DC23774579A92A0FBB /* Build configuration list for PBXNativeTarget "YYText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1379E97FC526777949EA1F5573FC61D /* Debug */,
+				113C704D0B5FFDF5AC492D55EFE50F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF778088B62C05BE1205DAE628D151DF /* Debug */,
+				72D1B831316303C2E356BBAC53FEF78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9712B150713685F741AB1DD34D8077 /* Build configuration list for PBXNativeTarget "NSDate+TimeAgo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C8691E18EC174E2768794E8F344F76 /* Debug */,
+				29F9F3DCEF99490F5A01D66F7C991455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D15DBFDF54E01C6553B6AAF08F544D /* Build configuration list for PBXNativeTarget "Pods-HMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A93B000CE9271EE18ADF9BC802C212D /* Debug */,
+				AF190561B51DC3FE29CDB6FEEE5EC256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
